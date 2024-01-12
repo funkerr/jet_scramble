@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9752b0c8e144801967e6897679604b, type: 3}
+  m_Name: vHierarchy Data
+  m_EditorClassIdentifier: 
+  sceneDatasByGuid:
+    keys:
+    - 99c9720ab356a0642a771bea13969a05
+    - 
+    - d5673b812d5fa6d4abc53777e9b3fa6b
+    - fd0b4aa7d7b1c1f4c93404ca1e7e8ddf
+    values:
+    - goDatasByGlobalId:
+        keys:
+        - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-330585543-0
+        - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-410087039-0
+        values:
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: Light Icon
+      goDatasByInstanceId:
+        keys: 06a9000010a90000
+        values:
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: Light Icon
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []
+    - goDatasByGlobalId:
+        keys:
+        - GlobalObjectId_V1-2-d5673b812d5fa6d4abc53777e9b3fa6b-1260574551-0
+        values:
+        - iColor: 0
+          icon: Camera Icon
+      goDatasByInstanceId:
+        keys: 18790100
+        values:
+        - iColor: 0
+          icon: Camera Icon
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []
