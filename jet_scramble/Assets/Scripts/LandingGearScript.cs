@@ -2,15 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using VInspector;
+
 public class LandingGearScript : MonoBehaviour
+
 {
+    public EasyAirplaneControls _myAirplaneScript;
+
     public float wheelRotation;
     public float timeRotation;
+
+    [Foldout("Wheels")]
     public GameObject wheelLeft;
     public GameObject wheelRight;
-    public GameObject wheelCoverL;
-    public GameObject wheelCoverR;
+    public GameObject wheelFront;
 
+    //public GameObject wheelCoverL;
+    //public GameObject wheelCoverR;
+
+    [Tab("Bools")]
     public bool gearRaised;
     public bool gearLowered;
 
@@ -31,7 +41,7 @@ public class LandingGearScript : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha9) && gearRaised)
         {
-           LowerWheelCover();
+           LowerGear();
         }
     }
    
@@ -41,36 +51,47 @@ public class LandingGearScript : MonoBehaviour
 
     void RaiseGear()
     {
+        //if(_myAirplaneScript.is)
+        if(_myAirplaneScript.grounded)
+        {
+            Debug.Log("Plane is grounded, cannot raise gear!");
+            return;
+        }
+
+        
         wheelLeft.transform.DOLocalRotate(new Vector3(0, 0, wheelRotation), timeRotation, RotateMode.Fast);
         wheelRight.transform.DOLocalRotate(new Vector3(0, 180, -70), timeRotation, RotateMode.Fast);
-        StartCoroutine("RaiseWheelCover");
-       
+        wheelFront.transform.DOLocalRotate(new Vector3(70, 0, 0), timeRotation, RotateMode.Fast);
+        //StartCoroutine("RaiseWheelCover");
+        gearLowered = false;
+        gearRaised = true;
+
+
     }
 
-    IEnumerator RaiseWheelCover()
-    {
-        yield return new WaitForSeconds(3);
-        wheelCoverR.transform.DOLocalRotate(new Vector3(0, 0, 0), 2, RotateMode.Fast);
-        wheelCoverL.transform.DOLocalRotate(new Vector3(0, 180, 0), 2, RotateMode.Fast);
-        yield return new WaitForSeconds(2);
-        Debug.Log("Gear Raised");
-        gearRaised = true;
-        gearLowered = false;
-    }
+    //IEnumerator RaiseWheelCover()
+    //{
+    //    yield return new WaitForSeconds(3);
+    //    wheelCoverR.transform.DOLocalRotate(new Vector3(0, 0, 0), 2, RotateMode.Fast);
+    //    wheelCoverL.transform.DOLocalRotate(new Vector3(0, 180, 0), 2, RotateMode.Fast);
+    //    yield return new WaitForSeconds(2);
+    //    Debug.Log("Gear Raised");
+    //    gearRaised = true;
+    //    gearLowered = false;
+    //}
 
 
     //LOWER LANDING GEAR
     //testing
 
-    void LowerWheelCover()
-    {
+    //public void LowerWheelCover()
+    //{
+    //    wheelCoverR.transform.DOLocalRotate(new Vector3(0, 0, -80), 2, RotateMode.Fast);
+    //    wheelCoverL.transform.DOLocalRotate(new Vector3(0, 180, -80), 2, RotateMode.Fast);
+    //    StartCoroutine("LowerGear");
 
-        wheelCoverR.transform.DOLocalRotate(new Vector3(0, 0, -80), 2, RotateMode.Fast);
-        wheelCoverL.transform.DOLocalRotate(new Vector3(0, 180, -80), 2, RotateMode.Fast);
-        StartCoroutine("LowerGear");
 
-
-    }
+    //}
 
     IEnumerator LowerGear()
     {

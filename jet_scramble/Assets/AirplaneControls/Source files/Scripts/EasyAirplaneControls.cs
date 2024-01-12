@@ -39,7 +39,8 @@ public class EasyAirplaneControls : MonoBehaviour
 
 
     float desiredSpeed; // speed to which the plane is accelerating/deaccelerating towards
-    [HideInInspector]
+
+    
     public float currentSpeed; // the speed we're currently at
 
     [HideInInspector]
@@ -61,7 +62,7 @@ public class EasyAirplaneControls : MonoBehaviour
 
     public float takeOffSpeed; // what is the speed when the plane can take off
 
-    [HideInInspector]
+    
     public bool grounded; // on ground or in air?
 
 
