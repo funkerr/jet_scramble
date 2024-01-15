@@ -29,8 +29,8 @@ public class missle_guide_script : MonoBehaviour
     {   
         myPlayer= GameObject.FindGameObjectWithTag("Player").GetComponent<EasyAirplaneControls>();
         myTarget = myPlayer.GetComponent<missle_launch_script>().target.transform;
-        Debug.Log(myTarget.name);
-        StartCoroutine("TargetTrackingDelay");
+        Debug.Log("Target is: " + myTarget.name);
+        //StartCoroutine("TargetTrackingDelay");
 
         
     }
@@ -38,26 +38,49 @@ public class missle_guide_script : MonoBehaviour
     //Update is called once per frame
     void FixedUpdate()
     {
-        if(lockedOn)
-        {
-            Vector3 directionToTarget = (myTarget.position - transform.position).normalized;
+        //works for now
+        //if(lockedOn)
+        //{
+        //    Vector3 directionToTarget = (myTarget.position - transform.position).normalized;
 
-            // Calculate the rotation step towards the target
-            Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        //    // Calculate the rotation step towards the target
+        //    Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
+        //    transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
-            // Move the missile forward
-            transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
-           //Debug.Log(missileSpeed);
-        }
+        //    // Move the missile forward
+        //    transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
+        //   //Debug.Log(missileSpeed);
+        //}
+        Run();
+
+    }
+
+    public void Run()
+    {
+        // Move the missile forward
+        transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
+        //Debug.Log(missileSpeed);
+
+        StartCoroutine("TargetTrackingDelay");
         
 
+        
+    }
+
+    public void StartGuiding()
+    {
+        Vector3 directionToTarget = (myTarget.position - transform.position).normalized;
+
+        // Calculate the rotation step towards the target
+        Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
     IEnumerator TargetTrackingDelay()
     {
         yield return new WaitForSeconds(trackingDelay);
         lockedOn = true;
         targetTracking = true;
+        StartGuiding();
     }
 
     public void ActivateMissle()

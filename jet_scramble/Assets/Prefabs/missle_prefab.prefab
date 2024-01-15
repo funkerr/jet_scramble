@@ -47,9 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myPlayer: {fileID: 0}
-  missileSpeed: 20
-  rotationSpeed: 10
-  trackingDelay: 1
+  missileSpeed: 30
+  rotationSpeed: 5
+  trackingDelay: 1.5
   myTarget: {fileID: 0}
   lockedOn: 0
   targetTracking: 0
