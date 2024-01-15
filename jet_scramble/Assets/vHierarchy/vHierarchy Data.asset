@@ -14,68 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneDatasByGuid:
     keys:
-    - 99c9720ab356a0642a771bea13969a05
-    - 
-    - d5673b812d5fa6d4abc53777e9b3fa6b
-    - fd0b4aa7d7b1c1f4c93404ca1e7e8ddf
     - f2ff3023937b4ee4193a76a49b23886a
     values:
     - goDatasByGlobalId:
         keys:
-        - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-330585543-0
-        - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-410087039-0
+        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-540441420-0
+        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-173952013-0
+        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1191414704-0
         values:
         - iColor: 0
-          icon: Camera Icon
+          icon: TrailRenderer Icon
+        - iColor: 0
+          icon: Terrain Icon
         - iColor: 0
           icon: Light Icon
       goDatasByInstanceId:
-        keys: 
-        values: []
-    - goDatasByGlobalId:
-        keys: []
-        values: []
-      goDatasByInstanceId:
-        keys: 
-        values: []
-    - goDatasByGlobalId:
-        keys:
-        - GlobalObjectId_V1-2-d5673b812d5fa6d4abc53777e9b3fa6b-1260574551-0
+        keys: 7cd8ffff82d7ffff20cfffff
         values:
         - iColor: 0
-          icon: Camera Icon
-      goDatasByInstanceId:
-        keys: 
-        values: []
-    - goDatasByGlobalId:
-        keys: []
-        values: []
-      goDatasByInstanceId:
-        keys: 
-        values: []
-    - goDatasByGlobalId:
-        keys:
-        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-293979421-0
-        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1682806837-0
-        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1969208160-0
-        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1239328251550596-1312728723
-        values:
+          icon: TrailRenderer Icon
         - iColor: 0
-          icon: Camera Icon
+          icon: Terrain Icon
         - iColor: 0
-          icon: DirectionalLight Icon
-        - iColor: 0
-          icon: 
-        - iColor: 0
-          icon: AvatarMask On Icon
-      goDatasByInstanceId:
-        keys: 2a7a00004a7a0000527a00009eccffff
-        values:
-        - iColor: 0
-          icon: Camera Icon
-        - iColor: 0
-          icon: DirectionalLight Icon
-        - iColor: 0
-          icon: 
-        - iColor: 0
-          icon: AvatarMask On Icon
+          icon: Light Icon
