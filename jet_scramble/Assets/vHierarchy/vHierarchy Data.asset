@@ -58,7 +58,7 @@ MonoBehaviour:
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-293979421-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1682806837-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1969208160-0
-        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1239328251550596-1312728723
+        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-472643089-0
         values:
         - iColor: 0
           icon: Camera Icon
@@ -67,9 +67,9 @@ MonoBehaviour:
         - iColor: 0
           icon: 
         - iColor: 0
-          icon: AvatarMask On Icon
+          icon: AudioReverbZone Icon
       goDatasByInstanceId:
-        keys: 2a7a00004a7a0000527a00009eccffff
+        keys: 2a7a00004a7a0000527a00009eccffff58d40000dad500003ed60000d2b6fcff
         values:
         - iColor: 0
           icon: Camera Icon
@@ -79,3 +79,11 @@ MonoBehaviour:
           icon: 
         - iColor: 0
           icon: AvatarMask On Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
+        - iColor: 0
+          icon: 
+        - iColor: 0
+          icon: AudioReverbZone Icon
