@@ -1,12 +1,17 @@
 using UnityEngine;
+using VHierarchy;
+using VInspector;
 
 public class missle_launch_script : MonoBehaviour
 {
     public GameObject missilePrefab;
     public Transform target;
+
+    [Foldout("Floats")]
     public float missileSpeed = 10f;
     public float rotationSpeed = 5f;
-    public float lockOnRadius = 5f;
+    public float lockOnRadius = 1000f;
+
     public Transform firePoint;
 
     public bool lockedOn = false;
