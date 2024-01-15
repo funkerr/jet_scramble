@@ -1,29 +1,34 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
-using VInspector;
 
 public class MissleLauncher : MonoBehaviour
 {
-    public Rigidbody missilePrefab;
+    public GameObject missilePrefab;
     public Transform target;
     public float missileSpeed = 10f;
     public float rotationSpeed = 5f;
     public float lockOnRadius = 5f;
-    public float m_thrust;
     public Transform firePoint;
 
-    [Tab("Bools")]
-    public bool lockedOn = false;
+    private bool lockedOn = false;
 
     void Update()
     {
-        
+        if (target != null && lockedOn)
+        {
+            // Calculate the direction towards the target
+            Vector3 directionToTarget = (target.position - transform.position).normalized;
+
+            // Calculate the rotation step towards the target
+            Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+            // Move the missile forward
+            transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
+        }
     }
 
     void FixedUpdate()
     {
-        FireMissile();
-        
         if (target == null || !lockedOn)
         {
             // Look for a target within the lock-on radius
@@ -36,7 +41,6 @@ public class MissleLauncher : MonoBehaviour
                 {
                     target = potentialTarget.transform;
                     lockedOn = true;
-                    FollowTarget();
                     break;
                 }
             }
@@ -45,46 +49,15 @@ public class MissleLauncher : MonoBehaviour
 
     public void FireMissile()
     {
-        if (lockedOn && (Input.GetMouseButtonDown(0)))
+        if (lockedOn)
         {
-            
-                Debug.Log("Pressed Mouse0");
-                if (target != null && lockedOn)
-                {
-                    Debug.Log("Got here");
-                // Instantiate and fire the missile from the firePoint position and rotation
-                //Rigidbody missle_rb = Instantiate(missilePrefab, firePoint.position, firePoint.rotation) as Rigidbody;
-                //
-                //missilePrefab.useGravity = true;
-                missilePrefab.AddForce(transform.forward * m_thrust,ForceMode.Force);
-                
+            // Instantiate and fire the missile from the firePoint position and rotation
+            GameObject missle = Instantiate(missilePrefab, firePoint.position, firePoint.rotation);
+            //missle.GetComponent<Missle>().SetTarget(target);
 
-                    
-                
-                    //missle.SetTarget(target);
-
-                   
-                    
-            }
-                
-            
-            
+            // Reset the locked-on state
+            target = null;
+            lockedOn = false;
         }
-    }
-
-    public void FollowTarget()
-    {
-        // Calculate the direction towards the target
-        Vector3 directionToTarget = (target.position - transform.position).normalized;
-
-        // Calculate the rotation step towards the target
-        Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-
-        // Move the missile forward
-        //transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
-        // Reset the locked-on state
-        target = null;
-        lockedOn = false;
     }
 }
