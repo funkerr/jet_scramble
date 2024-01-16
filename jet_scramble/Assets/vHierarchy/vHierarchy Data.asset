@@ -15,12 +15,14 @@ MonoBehaviour:
   sceneDatasByGuid:
     keys:
     - f2ff3023937b4ee4193a76a49b23886a
+    - 
     values:
     - goDatasByGlobalId:
         keys:
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-540441420-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-173952013-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1191414704-0
+        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-293979421-0
         values:
         - iColor: 0
           icon: TrailRenderer Icon
@@ -28,8 +30,10 @@ MonoBehaviour:
           icon: Terrain Icon
         - iColor: 0
           icon: Light Icon
+        - iColor: 0
+          icon: Camera Icon
       goDatasByInstanceId:
-        keys: 7cd8ffff82d7ffff20cfffff
+        keys: f26c0000cc6c0000126d0000d46c0000
         values:
         - iColor: 0
           icon: TrailRenderer Icon
@@ -37,3 +41,11 @@ MonoBehaviour:
           icon: Terrain Icon
         - iColor: 0
           icon: Light Icon
+        - iColor: 0
+          icon: Camera Icon
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []

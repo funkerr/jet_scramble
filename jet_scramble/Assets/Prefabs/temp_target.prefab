@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8523562679525295691}
   - component: {fileID: 1658985441373314718}
   - component: {fileID: 1752090000048583245}
+  - component: {fileID: 4571410263374617077}
   m_Layer: 0
   m_Name: temp_target
   m_TagString: Enemy
@@ -106,6 +107,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4571410263374617077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3970461740975150142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d042669bd9bd6349807619390f03d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fxExplode: {fileID: 4340323113754662507}
 --- !u!1001 &4339268681036352913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -190,6 +204,12 @@ PrefabInstance:
 --- !u!4 &4338766121603972721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4020996693717984, guid: 4cf45cdce36e66e4a93614abb5ae7821,
+    type: 3}
+  m_PrefabInstance: {fileID: 4339268681036352913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4340323113754662507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1056904543853562, guid: 4cf45cdce36e66e4a93614abb5ae7821,
     type: 3}
   m_PrefabInstance: {fileID: 4339268681036352913}
   m_PrefabAsset: {fileID: 0}

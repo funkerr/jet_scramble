@@ -61,17 +61,18 @@ public class missle_guide_script : MonoBehaviour
         //}
         playerSpeed = myPlayer.currentSpeed;
         movingSpeed = playerSpeed + missileSpeed;
-        Debug.Log(movingSpeed);
+        //Debug.Log(movingSpeed);
         
         Run();
+        float playerCurrentSpeed = PlayerSpeed();
         
-        //Debug.Log(playerSpeed);
+        Debug.Log("Player curret speed is: " + playerCurrentSpeed);
 
     }
-    float PlayerSpeed(float _currentSpeed)
+    float PlayerSpeed()
     {
         float speed = myPlayer.currentSpeed;
-        Debug.Log("Player speed: " + speed);
+        //("Player speed: " + speed);
         return speed;
         
     }
@@ -115,15 +116,14 @@ public class missle_guide_script : MonoBehaviour
 
         // Move the missile forward
         transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
-        Debug.Log(missileSpeed);
+        //Debug.Log(missileSpeed);
     }
 
     private void OnCollisionEnter(Collision col)
     {
-        Debug.Log("Missle hit target: " + col.gameObject);
-        fxExplode.SetActive(true);
-        //Destroy(gameObject);
-        Destroy(myTarget.gameObject);
+    //    Debug.Log("Missle hit target: " + col.gameObject);
+          Destroy(gameObject,.005f);
+    
     }
 
 
