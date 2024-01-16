@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
+using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 using VHierarchy;
 using VInspector;
@@ -11,16 +12,20 @@ public class missle_guide_script : MonoBehaviour
     public EasyAirplaneControls myPlayer;
 
     [Foldout("Floats")]
+    public float playerSpeed;
     public float missileSpeed;
     public float rotationSpeed;
-    //public float lockOnRadius;
     public float trackingDelay;
+    public float movingSpeed;
 
     public Transform myTarget;
 
     [Foldout("Bools")]
     public bool lockedOn;
     public bool targetTracking;
+
+    [Foldout("Gameobjects")]
+    public GameObject fxExplode;
     
 
 
@@ -32,12 +37,15 @@ public class missle_guide_script : MonoBehaviour
         Debug.Log("Target is: " + myTarget.name);
         //StartCoroutine("TargetTrackingDelay");
 
+        fxExplode.SetActive(false);
+
         
     }
 
     //Update is called once per frame
     void FixedUpdate()
     {
+
         //works for now
         //if(lockedOn)
         //{
@@ -51,14 +59,28 @@ public class missle_guide_script : MonoBehaviour
         //    transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
         //   //Debug.Log(missileSpeed);
         //}
+        playerSpeed = myPlayer.currentSpeed;
+        movingSpeed = playerSpeed + missileSpeed;
+        Debug.Log(movingSpeed);
+        
         Run();
+        
+        //Debug.Log(playerSpeed);
 
     }
-
+    float PlayerSpeed(float _currentSpeed)
+    {
+        float speed = myPlayer.currentSpeed;
+        Debug.Log("Player speed: " + speed);
+        return speed;
+        
+    }
     public void Run()
     {
+        
         // Move the missile forward
-        transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
+        //re work this for moving speed of the plane
+        transform.Translate(Vector3.forward  * movingSpeed * Time.deltaTime);
         //Debug.Log(missileSpeed);
 
         StartCoroutine("TargetTrackingDelay");
@@ -99,7 +121,8 @@ public class missle_guide_script : MonoBehaviour
     private void OnCollisionEnter(Collision col)
     {
         Debug.Log("Missle hit target: " + col.gameObject);
-        Destroy(gameObject);
+        fxExplode.SetActive(true);
+        //Destroy(gameObject);
         Destroy(myTarget.gameObject);
     }
 
