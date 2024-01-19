@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SickscoreGames.HUDNavigationSystem;
 
 public class destroy_target : MonoBehaviour
 {
 
     public GameObject fxExplode;
+    public float destroyDelay;
+    public HUDNavigationElement HUDElement;
 
     // Start is called before the first frame update
     void Start()
@@ -24,8 +27,9 @@ public class destroy_target : MonoBehaviour
         Debug.Log("Target hit by: " + col.gameObject);
        
         gameObject.GetComponent<Renderer>().enabled = false;
+        HUDElement.SetIndicatorActive(false);
         fxExplode.SetActive(true);
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, destroyDelay);
       
     }
 }
