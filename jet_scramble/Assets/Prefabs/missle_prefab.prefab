@@ -54,10 +54,15 @@ MonoBehaviour:
   rotationSpeed: 5
   trackingDelay: 1.5
   movingSpeed: 0
+  acceleration: 0
+  accelerationTime: 0
+  accelerateActiveTime: 0
   myTarget: {fileID: 0}
   lockedOn: 0
   targetTracking: 0
+  isAccelerating: 0
   fxExplode: {fileID: 3514697984363369539}
+  myMissleRb: {fileID: -8822793304175730903}
 --- !u!54 &-8822793304175730903
 Rigidbody:
   m_ObjectHideFlags: 0

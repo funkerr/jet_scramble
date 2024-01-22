@@ -17,15 +17,22 @@ public class missle_guide_script : MonoBehaviour
     public float rotationSpeed;
     public float trackingDelay;
     public float movingSpeed;
+    public float acceleration;
+    public float accelerationTime;
+    public float accelerateActiveTime;
 
     public Transform myTarget;
 
     [Foldout("Bools")]
     public bool lockedOn;
     public bool targetTracking;
+    public bool isAccelerating;
 
     [Foldout("Gameobjects")]
     public GameObject fxExplode;
+
+    [Foldout("RigidBodies")]
+    public Rigidbody myMissleRb;
     
 
 
@@ -81,7 +88,7 @@ public class missle_guide_script : MonoBehaviour
         
         // Move the missile forward
         //re work this for moving speed of the plane
-        transform.Translate(Vector3.forward  * movingSpeed * Time.deltaTime);
+        transform.Translate(Vector3.forward  * missileSpeed * Time.deltaTime);
         //Debug.Log(missileSpeed);
 
         StartCoroutine("TargetTrackingDelay");
