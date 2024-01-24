@@ -1,6 +1,8 @@
 using UnityEngine;
 using VHierarchy;
 using VInspector;
+using SensorToolkit;
+using System.Collections.Generic;
 
 public class missle_launch_script : MonoBehaviour
 {
@@ -15,6 +17,19 @@ public class missle_launch_script : MonoBehaviour
     public Transform firePoint;
 
     public bool lockedOn = false;
+
+    //testing sensor toolit
+    //public Collider radarCollider;
+    public Sensor myRadarSensor;
+    public SensorToolkit.FOVCollider myFovCollider;
+
+    void Start()
+    {
+        //myFovCollider
+        //List<Transform> GetVisibleTransforms(GameObject go)
+        List<Sensor> list = new List<Sensor>();
+
+    }
 
     void Update()
     {
