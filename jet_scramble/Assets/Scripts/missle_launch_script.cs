@@ -27,7 +27,7 @@ public class missle_launch_script : MonoBehaviour
     {
         //myFovCollider
         //List<Transform> GetVisibleTransforms(GameObject go)
-        List<Sensor> list = new List<Sensor>();
+        
 
     }
 
