@@ -9,6 +9,7 @@ TagManager:
   - missle
   - Ground
   - Main Camera
+  - Target Camera
   layers:
   - Default
   - TransparentFX
