@@ -23,6 +23,9 @@ public class missle_launch_script : MonoBehaviour
     public Sensor myRadarSensor;
     public SensorToolkit.FOVCollider myFovCollider;
 
+    //testing EnemyManager Class stuff
+    public EnemyManager enemyManager;
+
     void Start()
     {
         //myFovCollider
