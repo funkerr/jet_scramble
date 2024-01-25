@@ -32,7 +32,8 @@ public class EasyAirplaneControls : MonoBehaviour
     public float groundAccelerationSpeed = 0.5f; // how fast the plane accelerates on ground when taking off
 
     float lastHeight; // checking height changes
-    float heightChange;
+    public float heightChange;
+    public float currentHeight;
 
     float speedBoost; // current speed boost from gravity
     float gravityMultiplier; //current gravity
@@ -140,9 +141,14 @@ public class EasyAirplaneControls : MonoBehaviour
         PlaneMovement();
         PlaneRotations();
         CheckCollisions();
+        GetCurrentHeight();
 
     }
 
+    public void GetCurrentHeight()
+    {
+        currentHeight = transform.position.y;
+    }
     void WingInputs() {
         input_aileron = Input.GetAxis("Horizontal");
         input_elevator = Input.GetAxis("Vertical");
