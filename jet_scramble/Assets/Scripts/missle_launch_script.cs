@@ -25,6 +25,7 @@ public class missle_launch_script : MonoBehaviour
 
     //testing EnemyManager Class stuff
     public EnemyManager enemyManager;
+    //blic EnemyManager 
 
     void Start()
     {

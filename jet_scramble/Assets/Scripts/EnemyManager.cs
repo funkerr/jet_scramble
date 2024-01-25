@@ -15,7 +15,7 @@ public class EnemyManager : MonoBehaviour
     //public List<GameObject> EnemyPrefabsToLoad = new List<GameObject>();
     //public GameObject[] EnemyPrefabs = new GameObject[3];
 
-    
+    [System.Serializable]
     public class Enemy
     {
 
