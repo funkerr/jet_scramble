@@ -10,6 +10,8 @@ public class destroy_target : MonoBehaviour
     public float destroyDelay;
     public HUDNavigationElement HUDElement;
 
+    public Canvas myTargetCanvasRef;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,7 @@ public class destroy_target : MonoBehaviour
        
         gameObject.GetComponent<Renderer>().enabled = false;
         HUDElement.SetIndicatorActive(false);
+        myTargetCanvasRef.enabled = false;
         fxExplode.SetActive(true);
         Destroy(gameObject, destroyDelay);
       
