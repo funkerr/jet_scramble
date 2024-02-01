@@ -16,7 +16,7 @@ public class missle_guide_script : MonoBehaviour
     public float missileSpeed;
     public float rotationSpeed;
     public float trackingDelay;
-    public float movingSpeed;
+    //public float movingSpeed;
     public float acceleration;
     public float accelerationTime;
     public float accelerateActiveTime;
@@ -42,7 +42,6 @@ public class missle_guide_script : MonoBehaviour
         myPlayer= GameObject.FindGameObjectWithTag("Player").GetComponent<EasyAirplaneControls>();
         myTarget = myPlayer.GetComponent<missle_launch_script>().target.transform;
         Debug.Log("Target is: " + myTarget.name);
-        //StartCoroutine("TargetTrackingDelay");
 
         fxExplode.SetActive(false);
 
@@ -67,13 +66,13 @@ public class missle_guide_script : MonoBehaviour
         //   //Debug.Log(missileSpeed);
         //}
         playerSpeed = myPlayer.currentSpeed;
-        movingSpeed = playerSpeed + missileSpeed;
-        //Debug.Log(movingSpeed);
+        //movingSpeed = playerSpeed + missileSpeed;
+        ////Debug.Log(movingSpeed);
         
         Run();
-        float playerCurrentSpeed = PlayerSpeed();
+        //float playerCurrentSpeed = PlayerSpeed();
         
-        Debug.Log("Player curret speed is: " + playerCurrentSpeed);
+        //Debug.Log("Player curret speed is: " + playerCurrentSpeed);
 
     }
     float PlayerSpeed()
@@ -85,11 +84,16 @@ public class missle_guide_script : MonoBehaviour
     }
     public void Run()
     {
-        
+
         // Move the missile forward
-        //re work this for moving speed of the plane
-        transform.Translate(Vector3.forward  * missileSpeed * Time.deltaTime);
+        //re work this for moving speed of the planes
         //Debug.Log(missileSpeed);
+
+        //this works just testing moving better with plane moving
+        transform.Translate(new Vector3(0,0,1)* missileSpeed * Time.deltaTime);
+
+
+        //transform.Translate(Vector3.forward.y + 5f);
 
         StartCoroutine("TargetTrackingDelay");
         
@@ -113,18 +117,18 @@ public class missle_guide_script : MonoBehaviour
         StartGuiding();
     }
 
-    public void ActivateMissle()
-    {
-        Vector3 directionToTarget = (myTarget.position - transform.position).normalized;
+    //public void ActivateMissle()
+    //{
+    //    Vector3 directionToTarget = (myTarget.position - transform.position).normalized;
 
-        // Calculate the rotation step towards the target
-        Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+    //    // Calculate the rotation step towards the target
+    //    Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
+    //    transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
-        // Move the missile forward
-        transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
-        //Debug.Log(missileSpeed);
-    }
+    //    // Move the missile forward
+    //    transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
+    //    //Debug.Log(missileSpeed);
+    //}
 
     private void OnCollisionEnter(Collision col)
     {

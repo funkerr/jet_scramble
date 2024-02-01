@@ -20,20 +20,37 @@ public class missle_launch_script : MonoBehaviour
 
     //testing sensor toolit
     //public Collider radarCollider;
-    public Sensor myRadarSensor;
-    public SensorToolkit.FOVCollider myFovCollider;
+    [Foldout("Sensors")]
+    //public Sensor myRadarSensor;
+    //public SensorToolkit.FOVCollider myFovCollider;
+    public SensorToolkit.TriggerSensor triggerSensor;
 
     //testing EnemyManager Class stuff
-    public EnemyManager enemyManager;
-    //blic EnemyManager 
+    //public EnemyManager enemyManager;
+ 
 
     void Start()
     {
+        Debug.Log("got to start of missle launch");
         //myFovCollider
-        //List<Transform> GetVisibleTransforms(GameObject go)
-        
+        //triggerSensor= new SensorToolkit.TriggerSensor();
+        foreach (var x in triggerSensor.DetectedObjects)
+        {
+            Debug.Log("Found in List of Detected Objects " + x.ToString());
+        }
+        //myLst = new List<GameObject>triggerSensor.GetDetected();
+        // public List<Transform>;
+
+
+
+
 
     }
+        
+    //public List<GameObject> GetDetected()
+    //{
+    //    //return new List<GameObject>(DetectedObjectsOrderedByDistance);
+    //}
 
     void Update()
     {

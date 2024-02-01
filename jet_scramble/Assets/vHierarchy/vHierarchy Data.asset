@@ -18,15 +18,12 @@ MonoBehaviour:
     values:
     - goDatasByGlobalId:
         keys:
-        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1296622593-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-173952013-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-480947669-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1191414704-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-540441420-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-293979421-0
         values:
-        - iColor: 0
-          icon: 
         - iColor: 0
           icon: Terrain Icon
         - iColor: 0
@@ -38,10 +35,8 @@ MonoBehaviour:
         - iColor: 0
           icon: Camera Icon
       goDatasByInstanceId:
-        keys: 6825f6ff188f03006c8f0300e48f03007a8f0300308f0300
+        keys: 0475000068750000de750000767500002a75000016fbffff
         values:
-        - iColor: 0
-          icon: 
         - iColor: 0
           icon: Terrain Icon
         - iColor: 0
@@ -52,3 +47,5 @@ MonoBehaviour:
           icon: Canvas Icon
         - iColor: 0
           icon: Camera Icon
+        - iColor: 0
+          icon: AvatarMask On Icon

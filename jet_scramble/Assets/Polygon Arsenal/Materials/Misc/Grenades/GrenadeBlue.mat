@@ -15,10 +15,10 @@ Material:
   - _EMISSION
   m_InvalidKeywords:
   - _FLIPBOOKBLENDING_OFF
-  m_LightmapFlags: 0
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap:
     RenderType: Opaque
   disabledShaderPasses:
@@ -116,11 +116,11 @@ Material:
     - _BaseColor: {r: 0.19811317, g: 0.19811317, b: 0.19811317, a: 1}
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0.21960784, g: 1.3490196, b: 5.992157, a: 1}
+    - _Color: {r: 0.19811314, g: 0.19811314, b: 0.19811314, a: 1}
+    - _EmissionColor: {r: 0.60148215, g: 5.036837, b: 23.96349, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &7043957962302814532
+--- !u!114 &868231719725290084
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

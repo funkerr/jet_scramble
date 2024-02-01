@@ -30,7 +30,7 @@ public class destroy_target : MonoBehaviour
        
         gameObject.GetComponent<Renderer>().enabled = false;
         HUDElement.SetIndicatorActive(false);
-        myTargetCanvasRef.enabled = false;
+        //myTargetCanvasRef.enabled = false;
         fxExplode.SetActive(true);
         Destroy(gameObject, destroyDelay);
       
