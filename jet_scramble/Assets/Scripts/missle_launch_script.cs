@@ -3,58 +3,45 @@ using VHierarchy;
 using VInspector;
 using SensorToolkit;
 using System.Collections.Generic;
+using UnityEngine.UIElements;
 
 public class missle_launch_script : MonoBehaviour
 {
+    [Foldout("Gameobjects")]
     public GameObject missilePrefab;
+    public GameObject[] targets = new GameObject[2];
+
+    [Foldout("Transforms")]
+    public Transform firePoint;
     public Transform target;
 
-    [Foldout("Floats")]
-    public float missileSpeed = 10f;
-    public float rotationSpeed = 5f;
-    public float lockOnRadius = 1000f;
-
-    public Transform firePoint;
-
+    [Foldout("Bools")]
     public bool lockedOn = false;
 
-    //testing sensor toolit
-    //public Collider radarCollider;
     [Foldout("Sensors")]
-    //public Sensor myRadarSensor;
-    //public SensorToolkit.FOVCollider myFovCollider;
-    public SensorToolkit.TriggerSensor triggerSensor;
+    public TriggerSensor sensor;
 
     //testing EnemyManager Class stuff
     //public EnemyManager enemyManager;
- 
+
 
     void Start()
     {
-        Debug.Log("got to start of missle launch");
-        //myFovCollider
-        //triggerSensor= new SensorToolkit.TriggerSensor();
-        foreach (var x in triggerSensor.DetectedObjects)
-        {
-            Debug.Log("Found in List of Detected Objects " + x.ToString());
-        }
-        //myLst = new List<GameObject>triggerSensor.GetDetected();
-        // public List<Transform>;
-
-
-
-
-
+      
     }
-        
-    //public List<GameObject> GetDetected()
-    //{
-    //    //return new List<GameObject>(DetectedObjectsOrderedByDistance);
-    //}
+
+  
 
     void Update()
     {
-        //FireMissile();
+        //var d = sensor.GetDetected();  //<--- THIS RETURNS A LIST
+        //Debug.Log($"Detected: {d}");
+
+        //Testing what is detected by Triggersensor
+        foreach (var x in sensor.GetDetected())
+        {
+            Debug.Log(x.ToString());
+        }
     }
 
     void FixedUpdate()
@@ -62,7 +49,8 @@ public class missle_launch_script : MonoBehaviour
         if (target == null || !lockedOn)
         {
             // Look for a target within the lock-on radius
-            Collider[] targets = Physics.OverlapSphere(transform.position, lockOnRadius);
+            // temp workingn till i get sensor working better
+            Collider[] targets = Physics.OverlapSphere(transform.position, 1000);
 
             // Check if any targets are valid and within the lock-on radius
             foreach (Collider potentialTarget in targets)
@@ -71,7 +59,7 @@ public class missle_launch_script : MonoBehaviour
                 {
                     target = potentialTarget.transform;
                     lockedOn = true;
-                    
+
                     //Debug.Log(target.name);
                     break;
                 }
@@ -80,7 +68,6 @@ public class missle_launch_script : MonoBehaviour
         FireMissile();
 
     }
-
 
 
     public void FireMissile()
@@ -94,33 +81,8 @@ public class missle_launch_script : MonoBehaviour
 
                 Debug.Log("Fired Missle!");
 
-
-                //if (target != null && lockedOn)
-                //{
-                //    // Calculate the direction towards the target
-                //    Debug.Log("got here");
-                //    Vector3 directionToTarget = (missle.transform.position - transform.position).normalized;
-
-                //    // Calculate the rotation step towards the target
-                //    Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
-                //    missle.transform.rotation = Quaternion.Slerp(missle.transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-
-                //    // Move the missile forward
-                //    missle.transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
-                //    Debug.Log(missileSpeed);
-                //}
             }
-               
-
-            // Instantiate and fire the missile from the firePoint position and rotation
-            
-            //missle.GetComponent<Missle>().SetTarget(target);
-
-            // Reset the locked-on state
-            //target = null;
-            //lockedOn = false;
         }
-    }
 
-    
+    }
 }

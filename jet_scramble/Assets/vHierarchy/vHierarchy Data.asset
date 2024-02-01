@@ -35,7 +35,7 @@ MonoBehaviour:
         - iColor: 0
           icon: Camera Icon
       goDatasByInstanceId:
-        keys: 0475000068750000de750000767500002a75000016fbffff
+        keys: 167500006c750000cc7500007a7500003c750000def9ffff
         values:
         - iColor: 0
           icon: Terrain Icon
