@@ -7,6 +7,7 @@ public class destroy_target : MonoBehaviour
 {
 
     public GameObject fxExplode;
+    public GameObject fxExplode2;
     public float destroyDelay;
     public HUDNavigationElement HUDElement;
 
@@ -32,6 +33,7 @@ public class destroy_target : MonoBehaviour
         HUDElement.SetIndicatorActive(false);
         //myTargetCanvasRef.enabled = false;
         fxExplode.SetActive(true);
+        fxExplode2.SetActive(true);
         Destroy(gameObject, destroyDelay);
       
     }
