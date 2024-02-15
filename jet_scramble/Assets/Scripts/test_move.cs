@@ -5,6 +5,8 @@ using UnityEngine;
 public class test_move : MonoBehaviour
 {
     public float moveSpeed;
+    public Rigidbody myRB;
+    public float currentSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,8 +14,10 @@ public class test_move : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+
+
+        myRB.velocity = myRB.velocity + currentSpeed * (transform.forward * moveSpeed);
     }
 }

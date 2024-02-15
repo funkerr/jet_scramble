@@ -1,3 +1,4 @@
+using SensorToolkit.Example;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
@@ -33,6 +34,8 @@ public class missle_guide_script : MonoBehaviour
 
     [Foldout("RigidBodies")]
     public Rigidbody myMissleRb;
+
+    
     
 
 
@@ -44,7 +47,7 @@ public class missle_guide_script : MonoBehaviour
         Debug.Log("Target is: " + myTarget.name);
 
         fxExplode.SetActive(false);
-
+       
         
     }
 
@@ -106,7 +109,7 @@ public class missle_guide_script : MonoBehaviour
         Vector3 directionToTarget = (myTarget.position - transform.position).normalized;
 
         // Calculate the rotation step towards the target
-        Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
+     Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
     IEnumerator TargetTrackingDelay()
