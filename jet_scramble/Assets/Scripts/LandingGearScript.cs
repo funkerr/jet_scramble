@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using VInspector;
+using TMPro;
 
 public class LandingGearScript : MonoBehaviour
 
@@ -24,6 +25,10 @@ public class LandingGearScript : MonoBehaviour
     public bool gearRaised;
     public bool gearLowered;
 
+    [Tab("UI Texts")]
+    public TMP_Text gearText;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +46,7 @@ public class LandingGearScript : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha9) && gearRaised)
         {
-           LowerGear();
+           StartCoroutine("LowerGear");
         }
     }
    
@@ -65,6 +70,7 @@ public class LandingGearScript : MonoBehaviour
         //StartCoroutine("RaiseWheelCover");
         gearLowered = false;
         gearRaised = true;
+        gearText.enabled = false;
 
 
     }
@@ -95,7 +101,8 @@ public class LandingGearScript : MonoBehaviour
 
     IEnumerator LowerGear()
     {
-        yield return new WaitForSeconds(2f); 
+        yield return new WaitForSeconds(2f);
+        Debug.Log("Lowering Gear");
         wheelLeft.transform.DOLocalRotate(new Vector3(0, 180, 100), timeRotation, RotateMode.Fast);
         wheelRight.transform.DOLocalRotate(new Vector3(0, 0, 100), timeRotation, RotateMode.Fast);
         Debug.Log("Gear Lowered");
