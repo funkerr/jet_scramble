@@ -10,6 +10,7 @@ TagManager:
   - Ground
   - Main Camera
   - Target Camera
+  - groundtarget
   layers:
   - Default
   - TransparentFX

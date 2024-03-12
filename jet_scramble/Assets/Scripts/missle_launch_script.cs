@@ -9,6 +9,7 @@ public class missle_launch_script : MonoBehaviour
 {
     [Foldout("Gameobjects")]
     public GameObject missilePrefab;
+    public GameObject missilePrefab2;
     public GameObject[] targets = new GameObject[2];
 
     [Foldout("Transforms")]
@@ -66,6 +67,7 @@ public class missle_launch_script : MonoBehaviour
             }
         }
         FireMissile();
+        TestMissle();
 
     }
 
@@ -84,5 +86,20 @@ public class missle_launch_script : MonoBehaviour
             }
         }
 
+    }
+
+    public void TestMissle()
+    {
+        
+        {
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+
+                GameObject missle = Instantiate(missilePrefab2, firePoint.position, firePoint.rotation);
+
+                Debug.Log("Fired Missle!");
+
+            }
+        }
     }
 }
