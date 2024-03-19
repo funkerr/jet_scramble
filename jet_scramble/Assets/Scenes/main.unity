@@ -176,7 +176,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5426007}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 7.5648913, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -416,7 +416,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16150932}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 6.2239156, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -567,7 +567,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17229117}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 4.781083, z: 0}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -724,7 +724,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21715689}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 16.507963, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 16.868708, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -1051,7 +1051,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44067811}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 7.55222, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -6170,7 +6170,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50247245}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 4.590312, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -6321,7 +6321,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59087475}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 7.9401264, z: 0}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 33.114708, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -6682,7 +6682,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118800588}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 16.334545, z: 0.0000076293945}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -6937,7 +6937,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142022499}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 8.63615, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -7199,7 +7199,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173358093}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 5.8942695, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -7389,7 +7389,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175528070}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 1.0026914, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -7540,7 +7540,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175872871}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 7.0361357, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -8007,7 +8007,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198501262}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 16.03307, z: 0}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -8164,7 +8164,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208995753}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 9.930198, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -8327,7 +8327,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217618632}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 2.707115, z: 0}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 28.395126, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -8478,7 +8478,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218101656}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 48.253155, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -8829,7 +8829,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223299198}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 64.422516, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -8927,12 +8927,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1925575170}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &250568660 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1524064940678222, guid: 0d418d39d811ace4895bcbd985fd909f,
-    type: 3}
-  m_PrefabInstance: {fileID: 772946941}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &254966534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9340,7 +9334,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289147974}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 1.9088036, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -9957,7 +9951,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351059669}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 4.8389063, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -10108,7 +10102,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356049559}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 0.015378702, z: 0.0000076293945}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -10438,7 +10432,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380402144}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 28.458645, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -10638,7 +10632,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408039549}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0, y: 5.9586315, z: 0.0000076293945}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -10789,7 +10783,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417077922}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 13.67274, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -11043,7 +11037,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445363630}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 6.010835, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -11194,7 +11188,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451636995}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 9.515935, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -11345,7 +11339,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454418638}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 9.24318, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -11559,7 +11553,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479003122}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 1.8608228, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -11968,7 +11962,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521243639}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 6.456663, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 29.463518, z: 0}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -12119,7 +12113,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530966264}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 6.7159643, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 8.94851, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -12223,12 +12217,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5822721555696939516}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &530988568 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4060374817845989196, guid: 71e9c73d77412c547aaffb9a49215f2a,
-    type: 3}
-  m_PrefabInstance: {fileID: 5822721555696939516}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &530988569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12241,8 +12229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a44fd82afe7ec4a8506423e945d3f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wind_left: {fileID: 1103643579}
-  wind_right: {fileID: 250568660}
+  wind_left: {fileID: 0}
+  wind_right: {fileID: 0}
   myPlaneRef: {fileID: 23704690}
 --- !u!1 &537503956
 GameObject:
@@ -12297,7 +12285,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537503956}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 5.9992294, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -12573,7 +12561,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572790219}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 0.13440986, z: 0.0000076293945}
   m_Size: 199.99998
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -12709,7 +12697,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573965897}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 7.768111, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -12951,7 +12939,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578138957}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 0.15424821, z: 0.0000076293945}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -13102,7 +13090,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579863620}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 12.715161, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -13253,7 +13241,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 612060525}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 26.609976, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -13404,7 +13392,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614802224}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0, y: 2.2505174, z: 0.0000076293945}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -13554,13 +13542,13 @@ MonoBehaviour:
   editor_EnableLivePreview: 1
   enableTerrainMask: 1
   forceUpdateGeometry: 0
-  brushRadius: 100
+  brushRadius: 200
   brushRadiusJitter: 0
   brushRotation: 0
   brushRotationJitter: 0
   brushOpacity: 0.5
   brushOpacityJitter: 0
-  brushTargetStrength: 0.5
+  brushTargetStrength: 0.429
   brushScatter: 0
   brushScatterJitter: 0
   brushColor: {r: 1, g: 1, b: 1, a: 1}
@@ -18715,7 +18703,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701604939}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 7.4402103, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -18966,7 +18954,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711426061}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 8.453402, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -19117,7 +19105,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719775809}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 7.5649724, z: 0.0000076293945}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -19452,7 +19440,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720871416}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 9.24318, z: 0.0000076293945}
   m_Size: 199.99998
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -19603,7 +19591,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748463610}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 0.96270585, z: 0.0000076293945}
   m_Size: 199.99998
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -19686,78 +19674,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748463610}
   m_Mesh: {fileID: -5427694125708802666, guid: fa896e338d5242c4e9ede8ee8d144325, type: 2}
---- !u!1001 &772946941
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 530988568}
-    m_Modifications:
-    - target: {fileID: 1524064940678222, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_Name
-      value: wind_wing_right
-      objectReference: {fileID: 0}
-    - target: {fileID: 1524064940678222, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 199910640810488414, guid: 0d418d39d811ace4895bcbd985fd909f,
-        type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
---- !u!4 &772946942 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f,
-    type: 3}
-  m_PrefabInstance: {fileID: 772946941}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &781930835
 GameObject:
   m_ObjectHideFlags: 0
@@ -19811,7 +19727,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 781930835}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 5.8968005, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 54.468826, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -19962,7 +19878,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833289441}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0, y: 6.845831, z: 0.0000076293945}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -20113,7 +20029,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847628474}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 9.329682, z: 0}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -20264,7 +20180,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847870659}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 0.43540916, z: 0.0000076293945}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -20415,7 +20331,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849221670}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 13.5465765, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -20566,7 +20482,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858205917}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 11.5707445, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -25522,7 +25438,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886192440}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 4.573091, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -25923,7 +25839,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910399166}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0, y: 6.3499966, z: 0.0000076293945}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -26111,7 +26027,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937211782}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 6.3412843, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -26262,7 +26178,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943494167}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 29.54543, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -26620,7 +26536,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960630500}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 10.773736, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -26955,7 +26871,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993337812}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 7.0880456, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -27106,7 +27022,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006051566}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 14.958606, z: 0}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -27257,7 +27173,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014469656}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 6.137065, z: 0}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -27408,7 +27324,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035573637}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 5.431371, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -27559,7 +27475,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039015284}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 7.1152368, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -27783,7 +27699,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047409310}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 13.5820875, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -28050,7 +27966,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062624747}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0, y: 48.248253, z: 0.0000076293945}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -28216,7 +28132,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066049041}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 43.78134, z: 0.0000076293945}
   m_Size: 199.99998
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -28347,18 +28263,6 @@ MonoBehaviour:
   target: {fileID: 0}
   distance: 50
   copyTreeTag: 0
---- !u!1 &1103643579 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1524064940678222, guid: 0d418d39d811ace4895bcbd985fd909f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1799111242}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1103643582 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1799111242}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1106154230
 GameObject:
   m_ObjectHideFlags: 0
@@ -28463,7 +28367,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118671427}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 7.505767, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -28614,7 +28518,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132545432}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 0.32602817, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -28784,6 +28688,171 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158759339}
   m_CullTransparentMesh: 1
+--- !u!43 &1160801482
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FOVColliderPoints
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 162
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 29
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 125}
+      m_Extent: {x: 105.654564, y: 105.654564, z: 125}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 0200010000000300020000000a000500040009000a0004000b00060005000a000b0005000c00070006000b000c0006000d00080007000c000d0007000f000a0009000e000f00090010000b000a000f0010000a0011000c000b00100011000b0012000d000c00110012000c0014000f000e00130014000e00150010000f00140015000f001600110010001500160010001700120011001600170011001900140013001800190013001a001500140019001a0014001b00160015001a001b0015001c00170016001b001c00160002000300040005000200040006000200050007000200060008000200070000000100180001001900180001001a00190001001b001a0001001c001b0003000000040000000900040000000e000900000013000e000000180013000100020008000d0001000800120001000d001700010012001c0001001700
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 29
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 348
+    _typelessdata: 000080be000080be000000000000803e000080be000000000000803e0000803e00000000000080be0000803e00000000d982bfc2234fd34234594d43322944c2234fd342c8345d4300000000234fd342b293624332294442234fd342c8345d43d982bf42234fd34234594d43de4ccec28a705842c8345d43244f53c28b705842da496e43000000008b705842f2127443244f53428b705842da496e43de4cce428a705842c8345d43234fd3c200000000b29362438b7058c200000000f2127443000000000000000000007a438b70584200000000f2127443234fd34200000000b2936243de4ccec28a7058c2c8345d43244f53c28b7058c2da496e43000000008b7058c2f2127443244f53428b7058c2da496e43de4cce428a7058c2c8345d43d982bfc2234fd3c234594d43322944c2234fd3c2c8345d4300000000234fd3c2b293624332294442234fd3c2c8345d43d982bf42234fd3c234594d43
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 125}
+    m_Extent: {x: 105.654564, y: 105.654564, z: 125}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1187318411
 GameObject:
   m_ObjectHideFlags: 0
@@ -28979,7 +29048,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190380295}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 4.703154, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -29162,7 +29231,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195305128}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 7.3749747, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -29464,7 +29533,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215543772}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 7.2321615, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -29856,7 +29925,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261673495}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0, y: 10.895668, z: 0.0000076293945}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -30070,7 +30139,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273636145}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 3.421147, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -30401,7 +30470,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311867524}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 6.7688875, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 28.531305, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -30615,7 +30684,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351838735}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 26.029224, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -30713,171 +30782,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1258287362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1352578244
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: FOVColliderPoints
-  serializedVersion: 11
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 162
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 29
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 125}
-      m_Extent: {x: 105.654564, y: 105.654564, z: 125}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 0200010000000300020000000a000500040009000a0004000b00060005000a000b0005000c00070006000b000c0006000d00080007000c000d0007000f000a0009000e000f00090010000b000a000f0010000a0011000c000b00100011000b0012000d000c00110012000c0014000f000e00130014000e00150010000f00140015000f001600110010001500160010001700120011001600170011001900140013001800190013001a001500140019001a0014001b00160015001a001b0015001c00170016001b001c00160002000300040005000200040006000200050007000200060008000200070000000100180001001900180001001a00190001001b001a0001001c001b0003000000040000000900040000000e000900000013000e000000180013000100020008000d0001000800120001000d001700010012001c0001001700
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 29
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 348
-    _typelessdata: 000080be000080be000000000000803e000080be000000000000803e0000803e00000000000080be0000803e00000000d982bfc2234fd34234594d43322944c2234fd342c8345d4300000000234fd342b293624332294442234fd342c8345d43d982bf42234fd34234594d43de4ccec28a705842c8345d43244f53c28b705842da496e43000000008b705842f2127443244f53428b705842da496e43de4cce428a705842c8345d43234fd3c200000000b29362438b7058c200000000f2127443000000000000000000007a438b70584200000000f2127443234fd34200000000b2936243de4ccec28a7058c2c8345d43244f53c28b7058c2da496e43000000008b7058c2f2127443244f53428b7058c2da496e43de4cce428a7058c2c8345d43d982bfc2234fd3c234594d43322944c2234fd3c2c8345d4300000000234fd3c2b293624332294442234fd3c2c8345d43d982bf42234fd3c234594d43
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 125}
-    m_Extent: {x: 105.654564, y: 105.654564, z: 125}
-  m_MeshUsageFlags: 0
-  m_CookingOptions: 30
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!4 &1364613483 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4059269902325614, guid: 4ae26ac0289f55948bb14bd1da6bf042,
@@ -30943,7 +30847,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375035610}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 48.248253, z: 0.0000076293945}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -31094,7 +30998,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377296811}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0, y: 18.544893, z: 0.0000076293945}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -31317,7 +31221,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421195104}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 26.484726, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -31516,7 +31420,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430163107}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 10.073244, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -31667,7 +31571,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439574887}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0, y: 0.63790894, z: 0.0000076293945}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -31955,7 +31859,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446113779}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 10.528002, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 10.877934, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -32233,7 +32137,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520422159}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 22.215214, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -32542,7 +32446,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534794692}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 48.68918, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -38445,7 +38349,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690600298}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 7.001875, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -38596,7 +38500,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698842472}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 4.74341, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -38967,7 +38871,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717972716}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 7.48077, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 11.160827, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -39316,7 +39220,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1737384669}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 7.7035327, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -39573,7 +39477,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785759676}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 11.333326, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 54.610767, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -39760,72 +39664,6 @@ MonoBehaviour:
     enemyPrefab: {fileID: 0}
     health: 100
     speed: 100
---- !u!1001 &1799111242
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 530988568}
-    m_Modifications:
-    - target: {fileID: 1524064940678222, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_Name
-      value: wind_wing_left
-      objectReference: {fileID: 0}
-    - target: {fileID: 1524064940678222, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.5699997
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240423762307214, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 199910640810488414, guid: 0d418d39d811ace4895bcbd985fd909f,
-        type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0d418d39d811ace4895bcbd985fd909f, type: 3}
 --- !u!1 &1807363160
 GameObject:
   m_ObjectHideFlags: 0
@@ -40016,7 +39854,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814343525}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 9.176473, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -40320,7 +40158,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850048209}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 37.601, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -40471,7 +40309,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854142773}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 13.589957, z: 0.0000076293945}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -40830,7 +40668,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941165093}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 2.6892734, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -40981,7 +40819,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942844862}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 4.7043447, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -41684,7 +41522,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004411539}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 4.798577, z: 0}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -41835,7 +41673,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014861136}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 0.78354424, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -41986,7 +41824,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022304875}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 60.39518, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -42137,7 +41975,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028247101}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 7.3127637, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 10.984928, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -42417,7 +42255,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067925418}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 14.420614, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -42568,7 +42406,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071109116}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 0.9897704, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -42719,7 +42557,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071139770}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.32356805, z: 0}
+  m_LocalReferencePoint: {x: 0, y: 22.596075, z: 0}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -42870,7 +42708,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077347497}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0000076293945, y: 1.8233352, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.0000076293945, y: 32.62549, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -43274,7 +43112,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096029013}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0, y: 56.97089, z: 0.000015258789}
   m_Size: 200
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -43425,7 +43263,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099675787}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.000015258789}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 7.145994, z: 0.000015258789}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -43647,7 +43485,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133305451}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.000015258789, y: 0, z: 0.0000076293945}
+  m_LocalReferencePoint: {x: 0.000015258789, y: 0.115955025, z: 0.0000076293945}
   m_Size: 200.00002
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -44042,14 +43880,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 48507678}
-    - targetCorrespondingSourceObject: {fileID: 4060374817845989196, guid: 71e9c73d77412c547aaffb9a49215f2a,
-        type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 772946942}
-    - targetCorrespondingSourceObject: {fileID: 4060374817845989196, guid: 71e9c73d77412c547aaffb9a49215f2a,
-        type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 1103643582}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7925009258847487866, guid: 71e9c73d77412c547aaffb9a49215f2a,
         type: 3}
