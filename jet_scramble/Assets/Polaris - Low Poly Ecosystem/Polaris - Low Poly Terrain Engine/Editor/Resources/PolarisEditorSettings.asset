@@ -85,9 +85,9 @@ MonoBehaviour:
     texturingModel: 0
     splatsModel: 0
     origin: {x: 0, y: 0, z: 0}
-    tileSize: {x: 1000, y: 1000, z: 1000}
-    tileCountX: 2
-    tileCountZ: 2
+    tileSize: {x: 2500, y: 2500, z: 2500}
+    tileCountX: 1
+    tileCountZ: 1
     groupId: 0
     terrainNamePrefix: Terrain
     dataDirectory: Assets/_TerrainData
