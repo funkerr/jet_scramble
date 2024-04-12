@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4886218054143435223
+--- !u!114 &-9131030081125885451
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15,7 +15,7 @@ MonoBehaviour:
   active: 1
   effectIntensity:
     m_OverrideState: 1
-    m_Value: 0.4
+    m_Value: 0.2
   distanceFade:
     m_OverrideState: 1
     m_Value: 0
@@ -68,9 +68,9 @@ MonoBehaviour:
   m_Name: Post_Processing Profile
   m_EditorClassIdentifier: 
   components:
-  - {fileID: -4886218054143435223}
   - {fileID: 7529885385112385909}
   - {fileID: 6631746923597160591}
+  - {fileID: -9131030081125885451}
 --- !u!114 &6631746923597160591
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -92,7 +92,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.3
+    m_Value: 0.4
   smoothness:
     m_OverrideState: 1
     m_Value: 0.2

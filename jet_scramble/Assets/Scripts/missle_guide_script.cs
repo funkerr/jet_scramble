@@ -21,6 +21,8 @@ public class missle_guide_script : MonoBehaviour
     public float acceleration;
     public float accelerationTime;
     public float accelerateActiveTime;
+    public float speedTomagnitude;
+    public float missleSpeedmodifer;
 
     public Transform myTarget;
 
@@ -47,8 +49,13 @@ public class missle_guide_script : MonoBehaviour
         Debug.Log("Target is: " + myTarget.name);
 
         fxExplode.SetActive(false);
-       
-        
+
+        Debug.Log("Player Speed is: " + playerSpeed);
+        Debug.Log("Current missle speed should be " + missileSpeed);
+        playerSpeed = myPlayer.currentSpeed;
+        missileSpeed = missileSpeed + playerSpeed;
+
+
     }
 
     //Update is called once per frame
@@ -69,6 +76,9 @@ public class missle_guide_script : MonoBehaviour
         //   //Debug.Log(missileSpeed);
         //}
         playerSpeed = myPlayer.currentSpeed;
+        
+        
+        //speedTomagnitude = 
         //movingSpeed = playerSpeed + missileSpeed;
         ////Debug.Log(movingSpeed);
         
@@ -93,12 +103,20 @@ public class missle_guide_script : MonoBehaviour
         //Debug.Log(missileSpeed);
 
         //this works just testing moving better with plane moving
-        transform.Translate(new Vector3(0,0,1)* missileSpeed * Time.deltaTime);
+        //need to add players current speed
+        
+       
+        transform.Translate(new Vector3(0,0,1) * missileSpeed * Time.deltaTime);
+       
+        //testing RB velocity instead so I can add multiplier and Acceleration
+        //Rigidbody missleRB = GetComponent<Rigidbody>();
+        //missleRB.velocity = missleRB.velocity * missleSpeedmodifer;
 
 
         //transform.Translate(Vector3.forward.y + 5f);
 
-        StartCoroutine("TargetTrackingDelay");
+        //temp disabled to figure out speed 4/12
+        //StartCoroutine("TargetTrackingDelay");
         
 
         
@@ -109,16 +127,19 @@ public class missle_guide_script : MonoBehaviour
         Vector3 directionToTarget = (myTarget.position - transform.position).normalized;
 
         // Calculate the rotation step towards the target
-     Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
+        Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
-    IEnumerator TargetTrackingDelay()
-    {
-        yield return new WaitForSeconds(trackingDelay);
-        lockedOn = true;
-        targetTracking = true;
-        StartGuiding();
-    }
+
+    //temp disabled 4/12 till testing missle speed + player speed
+
+    //IEnumerator TargetTrackingDelay()
+    //{
+    //    yield return new WaitForSeconds(trackingDelay);
+    //    lockedOn = true;
+    //    targetTracking = true;
+    //    StartGuiding();
+    //}
 
     //public void ActivateMissle()
     //{

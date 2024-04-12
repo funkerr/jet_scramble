@@ -23,16 +23,16 @@ MonoBehaviour:
   maxDepth: 5
   enableFoam: 1
   foamColor: {r: 1, g: 1, b: 1, a: 1}
-  foamDistance: 1.2
+  foamDistance: 2
   enableFoamHQ: 0
   foamNoiseScaleHQ: 3
   foamNoiseSpeedHQ: 1
-  shorelineFoamStrength: 1
-  rippleHeight: 0.1
-  rippleSpeed: 5
+  shorelineFoamStrength: 0.729
+  rippleHeight: 1
+  rippleSpeed: 2
   rippleNoiseScale: 1
-  fresnelStrength: 0
-  fresnelBias: 0
+  fresnelStrength: 1
+  fresnelBias: 1
   enableReflection: 0
   reflectionTextureResolution: 32
   enableReflectionPixelLight: 0

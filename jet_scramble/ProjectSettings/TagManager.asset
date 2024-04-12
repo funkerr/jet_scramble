@@ -22,7 +22,7 @@ TagManager:
   - TargetCamPostProcessing
   - RenderTextureLayer
   - TerrainLayer
-  - 
+  - ScreenSpaceCavity
   - 
   - 
   - 
