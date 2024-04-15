@@ -57,7 +57,10 @@ public class missle_guide_script : MonoBehaviour
 
 
     }
-
+    public void Update()
+    {
+        Run();
+    }
     //Update is called once per frame
     void FixedUpdate()
     {
@@ -75,14 +78,14 @@ public class missle_guide_script : MonoBehaviour
         //    transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
         //   //Debug.Log(missileSpeed);
         //}
-        playerSpeed = myPlayer.currentSpeed;
+        //playerSpeed = myPlayer.currentSpeed;
         
         
         //speedTomagnitude = 
         //movingSpeed = playerSpeed + missileSpeed;
         ////Debug.Log(movingSpeed);
         
-        Run();
+        
         //float playerCurrentSpeed = PlayerSpeed();
         
         //Debug.Log("Player curret speed is: " + playerCurrentSpeed);

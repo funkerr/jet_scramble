@@ -15,6 +15,7 @@ MonoBehaviour:
   sceneDatasByGuid:
     keys:
     - f2ff3023937b4ee4193a76a49b23886a
+    - 
     values:
     - goDatasByGlobalId:
         keys:
@@ -24,6 +25,9 @@ MonoBehaviour:
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-540441420-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-293979421-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1824429891-0
+        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-8565185513392337843-5822721555696939516
+        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-645648871-0
+        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1445596059-0
         values:
         - iColor: 0
           icon: Terrain Icon
@@ -37,20 +41,36 @@ MonoBehaviour:
           icon: Camera Icon
         - iColor: 0
           icon: ScriptableObject Icon
-      goDatasByInstanceId:
-        keys: e476000042770000c2770000507700000c7700001cfbffff2af7feff
-        values:
-        - iColor: 0
-          icon: Terrain Icon
-        - iColor: 0
-          icon: AudioReverbZone Icon
-        - iColor: 0
-          icon: DirectionalLight Icon
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 0
-          icon: Camera Icon
         - iColor: 0
           icon: AvatarMask On Icon
         - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+      goDatasByInstanceId:
+        keys: 34880100ba8801004a8a0100f48801006e880100aa8b01003c88010036890100b28a0100
+        values:
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: AudioReverbZone Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
           icon: ScriptableObject Icon
+        - iColor: 0
+          icon: AvatarMask On Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []

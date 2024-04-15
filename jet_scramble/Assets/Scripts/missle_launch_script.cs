@@ -43,6 +43,8 @@ public class missle_launch_script : MonoBehaviour
         {
             Debug.Log(x.ToString());
         }
+
+        FireMissile();
     }
 
     void FixedUpdate()
@@ -66,7 +68,7 @@ public class missle_launch_script : MonoBehaviour
                 }
             }
         }
-        FireMissile();
+        
         TestMissle();
 
     }
@@ -74,8 +76,9 @@ public class missle_launch_script : MonoBehaviour
 
     public void FireMissile()
     {
-        if (lockedOn)
-        {
+        //test disable lock on 4/13
+        //if (lockedOn)
+        //{
             if (Input.GetKeyDown(KeyCode.G))
             {
 
@@ -84,7 +87,7 @@ public class missle_launch_script : MonoBehaviour
                 Debug.Log("Fired Missle!");
 
             }
-        }
+        //}
 
     }
 
