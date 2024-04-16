@@ -3,7 +3,9 @@ using VHierarchy;
 using VInspector;
 using SensorToolkit;
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine.UIElements;
+using UnityEngine.Rendering;
 
 public class missle_launch_script : MonoBehaviour
 {
@@ -13,7 +15,8 @@ public class missle_launch_script : MonoBehaviour
     public GameObject[] targets = new GameObject[2];
 
     [Foldout("Transforms")]
-    public Transform firePoint;
+    public Transform firePoint_left;
+    public Transform firePoint_right;
     public Transform target;
 
     [Foldout("Bools")]
@@ -69,7 +72,7 @@ public class missle_launch_script : MonoBehaviour
             }
         }
         
-        TestMissle();
+        //TestMissle();
 
     }
 
@@ -82,27 +85,38 @@ public class missle_launch_script : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.G))
             {
 
-                GameObject missle = Instantiate(missilePrefab, firePoint.position, firePoint.rotation);
+                GameObject missle_left = Instantiate(missilePrefab, firePoint_left.position, firePoint_left.rotation);
+                StartCoroutine("FireSecondMissle");
+                
 
-                Debug.Log("Fired Missle!");
+            Debug.Log("Fired Missle!");
 
             }
         //}
 
     }
 
-    public void TestMissle()
-    {
+    //public void TestMissle()
+    //{
         
-        {
-            if (Input.GetKeyDown(KeyCode.O))
-            {
+    //    {
+    //        if (Input.GetKeyDown(KeyCode.O))
+    //        {
 
-                GameObject missle = Instantiate(missilePrefab2, firePoint.position, firePoint.rotation);
+    //            GameObject missle = Instantiate(missilePrefab2, firePoint.position, firePoint.rotation);
 
-                Debug.Log("Fired Missle!");
+    //            Debug.Log("Fired Missle!");
 
-            }
-        }
-    }
+    //        }
+    //    }
+    //}
+
+    IEnumerator FireSecondMissle() 
+
+    {
+        yield return new WaitForSeconds(1f);
+        GameObject missle_right = Instantiate(missilePrefab, firePoint_right.position, firePoint_right.rotation);
+        Debug.Log("Fired Second Missle");
+
+    }  
 }
