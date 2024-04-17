@@ -45,7 +45,9 @@ public class missle_guide_script : MonoBehaviour
     void Start()
     {   
         myPlayer= GameObject.FindGameObjectWithTag("Player").GetComponent<EasyAirplaneControls>();
-        myTarget = myPlayer.GetComponent<missle_launch_script>().target.transform;
+        
+        //working setting targets with list of detected, disabling this temp 4/17
+        //myTarget = myPlayer.GetComponent<missle_launch_script>().target.transform;
         Debug.Log("Target is: " + myTarget.name);
 
         fxExplode.SetActive(false);
@@ -120,6 +122,7 @@ public class missle_guide_script : MonoBehaviour
 
         //temp disabled to figure out speed 4/12
         //StartCoroutine("TargetTrackingDelay");
+        Destroy(gameObject,5f);
         
 
         

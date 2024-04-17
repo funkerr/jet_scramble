@@ -19,7 +19,7 @@ public class missle_launch_script : MonoBehaviour
     [Foldout("Transforms")]
     public Transform firePoint_left;
     public Transform firePoint_right;
-    public Transform target;
+    //public Transform target;
 
     [Foldout("Bools")]
     public bool lockedOn = false;
@@ -27,22 +27,8 @@ public class missle_launch_script : MonoBehaviour
     [Foldout("Sensors")]
     public TriggerSensor sensor;
 
-    //testing EnemyManager Class stuff
-    //public EnemyManager enemyManager;
-    [Foldout("Lists")]
+    [Foldout("Targets")]
     public List<GameObject> targetsFound = new List<GameObject>();
-
-
-    void Start()
-    {
-      
-    }
-
-    [Command]
-    public void Test()
-    {
-        Debug.Log("testing commands");
-    }
 
 
     void Update()
@@ -53,12 +39,7 @@ public class missle_launch_script : MonoBehaviour
         //Testing what is detected by Triggersensor
         foreach (GameObject x in sensor.GetDetected())
         {
-            int i = 0;
-            // too much spam disabling for now
-            //Debug.Log(x.ToString());
-            targets[0] = 
-            targets[1] = x;
-
+      
             if(!targetsFound.Contains(x))
             {
                 targetsFound.Add(x);
@@ -97,7 +78,7 @@ public class missle_launch_script : MonoBehaviour
 
     //}
 
-    [Command]
+    
     public void FireMissile()
     {
         //test disable lock on 4/13
@@ -105,7 +86,7 @@ public class missle_launch_script : MonoBehaviour
         //{
             if (Input.GetKeyDown(KeyCode.G))
             {
-
+            
                 GameObject missle_left = Instantiate(missilePrefab, firePoint_left.position, firePoint_left.rotation);
                 StartCoroutine("FireSecondMissle");
                 
