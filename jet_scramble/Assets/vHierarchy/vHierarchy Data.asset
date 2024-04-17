@@ -25,7 +25,6 @@ MonoBehaviour:
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-540441420-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-293979421-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1824429891-0
-        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-8565185513392337843-5822721555696939516
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-645648871-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1445596059-0
         values:
@@ -41,8 +40,6 @@ MonoBehaviour:
           icon: Camera Icon
         - iColor: 0
           icon: ScriptableObject Icon
-        - iColor: 0
-          icon: AvatarMask On Icon
         - iColor: 0
           icon: StandaloneInputModule Icon
         - iColor: 0
@@ -62,7 +59,7 @@ MonoBehaviour:
           icon: Camera Icon
         - iColor: 0
           icon: ScriptableObject Icon
-        - iColor: 0
+        - iColor: 4
           icon: AvatarMask On Icon
         - iColor: 0
           icon: StandaloneInputModule Icon

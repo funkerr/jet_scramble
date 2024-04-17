@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UIElements;
 using UnityEngine.Rendering;
+using QFSW.QC;
+using JetBrains.Annotations;
 
 public class missle_launch_script : MonoBehaviour
 {
@@ -27,6 +29,8 @@ public class missle_launch_script : MonoBehaviour
 
     //testing EnemyManager Class stuff
     //public EnemyManager enemyManager;
+    [Foldout("Lists")]
+    public List<GameObject> targetsFound = new List<GameObject>();
 
 
     void Start()
@@ -34,7 +38,12 @@ public class missle_launch_script : MonoBehaviour
       
     }
 
-  
+    [Command]
+    public void Test()
+    {
+        Debug.Log("testing commands");
+    }
+
 
     void Update()
     {
@@ -42,41 +51,53 @@ public class missle_launch_script : MonoBehaviour
         //Debug.Log($"Detected: {d}");
 
         //Testing what is detected by Triggersensor
-        foreach (var x in sensor.GetDetected())
+        foreach (GameObject x in sensor.GetDetected())
         {
-            Debug.Log(x.ToString());
+            int i = 0;
+            // too much spam disabling for now
+            //Debug.Log(x.ToString());
+            targets[0] = 
+            targets[1] = x;
+
+            if(!targetsFound.Contains(x))
+            {
+                targetsFound.Add(x);
+            }
+            
+            
         }
 
         FireMissile();
     }
 
-    void FixedUpdate()
-    {
-        if (target == null || !lockedOn)
-        {
-            // Look for a target within the lock-on radius
-            // temp workingn till i get sensor working better
-            Collider[] targets = Physics.OverlapSphere(transform.position, 1000);
+    //temp disabling 4/17
+    //void FixedUpdate()
+    //{
+    //    if (target == null || !lockedOn)
+    //    {
+    //        // Look for a target within the lock-on radius
+    //        // temp workingn till i get sensor working better
+    //        Collider[] targets = Physics.OverlapSphere(transform.position, 1000);
 
-            // Check if any targets are valid and within the lock-on radius
-            foreach (Collider potentialTarget in targets)
-            {
-                if (potentialTarget.CompareTag("Enemy")) // Change "Enemy" to the tag used for target objects
-                {
-                    target = potentialTarget.transform;
-                    lockedOn = true;
+    //        // Check if any targets are valid and within the lock-on radius
+    //        foreach (Collider potentialTarget in targets)
+    //        {
+    //            if (potentialTarget.CompareTag("Enemy")) // Change "Enemy" to the tag used for target objects
+    //            {
+    //                target = potentialTarget.transform;
+    //                lockedOn = true;
 
-                    //Debug.Log(target.name);
-                    break;
-                }
-            }
-        }
+    //                //Debug.Log(target.name);
+    //                break;
+    //            }
+    //        }
+    //    }
         
-        //TestMissle();
+    //    //TestMissle();
 
-    }
+    //}
 
-
+    [Command]
     public void FireMissile()
     {
         //test disable lock on 4/13
