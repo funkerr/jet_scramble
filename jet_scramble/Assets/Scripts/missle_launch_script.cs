@@ -19,7 +19,7 @@ public class missle_launch_script : MonoBehaviour
     [Foldout("Transforms")]
     public Transform firePoint_left;
     public Transform firePoint_right;
-    //public Transform target;
+    public Transform target;
 
     [Foldout("Bools")]
     public bool lockedOn = false;

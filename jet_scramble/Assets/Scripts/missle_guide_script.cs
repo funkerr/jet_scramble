@@ -46,9 +46,9 @@ public class missle_guide_script : MonoBehaviour
     {   
         myPlayer= GameObject.FindGameObjectWithTag("Player").GetComponent<EasyAirplaneControls>();
         
-        //working setting targets with list of detected, disabling this temp 4/17
+        //temp disabled - shooting working - 4/17
         //myTarget = myPlayer.GetComponent<missle_launch_script>().target.transform;
-        Debug.Log("Target is: " + myTarget.name);
+        //Debug.Log("Target is: " + myTarget.name);
 
         fxExplode.SetActive(false);
 
