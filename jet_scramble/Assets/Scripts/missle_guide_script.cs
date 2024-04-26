@@ -6,6 +6,7 @@ using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 using VHierarchy;
 using VInspector;
+using MoreMountains.Feedbacks;
 
 public class missle_guide_script : MonoBehaviour
 {
@@ -112,7 +113,7 @@ public class missle_guide_script : MonoBehaviour
         
        
         transform.Translate(new Vector3(0,0,1) * missileSpeed * Time.deltaTime);
-       
+
         //testing RB velocity instead so I can add multiplier and Acceleration
         //Rigidbody missleRB = GetComponent<Rigidbody>();
         //missleRB.velocity = missleRB.velocity * missleSpeedmodifer;
@@ -122,6 +123,12 @@ public class missle_guide_script : MonoBehaviour
 
         //temp disabled to figure out speed 4/12
         //StartCoroutine("TargetTrackingDelay");
+
+        //4/25/24
+        // testing adding an acceleration force
+        myMissleRb.AddForce(Vector3.forward * 2f, ForceMode.Acceleration);
+
+
         Destroy(gameObject,5f);
         
 
