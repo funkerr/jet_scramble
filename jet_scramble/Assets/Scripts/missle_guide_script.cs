@@ -18,12 +18,12 @@ public class missle_guide_script : MonoBehaviour
     public float missileSpeed;
     public float rotationSpeed;
     public float trackingDelay;
-    //public float movingSpeed;
     public float acceleration;
     public float accelerationTime;
     public float accelerateActiveTime;
     public float speedTomagnitude;
     public float missleSpeedmodifer;
+    public float missleForce;
 
     public Transform myTarget;
 
@@ -38,6 +38,8 @@ public class missle_guide_script : MonoBehaviour
     [Foldout("RigidBodies")]
     public Rigidbody myMissleRb;
 
+    public List<GameObject> targetList = new List<GameObject>();
+
     
     
 
@@ -46,10 +48,16 @@ public class missle_guide_script : MonoBehaviour
     void Start()
     {   
         myPlayer= GameObject.FindGameObjectWithTag("Player").GetComponent<EasyAirplaneControls>();
-        
+        targetList = myPlayer.GetComponent<missle_launch_script>().targetsFound;
+
         //temp disabled - shooting working - 4/17
         //myTarget = myPlayer.GetComponent<missle_launch_script>().target.transform;
         //Debug.Log("Target is: " + myTarget.name);
+
+        // myTarget = myPlayer.GetComponent<missle_launch_script>().
+       
+        // kinda working, speed is off 4/29
+        // myTarget = targetList[0].transform;
 
         fxExplode.SetActive(false);
 
@@ -113,6 +121,11 @@ public class missle_guide_script : MonoBehaviour
         
        
         transform.Translate(new Vector3(0,0,1) * missileSpeed * Time.deltaTime);
+        
+        // disabling accelration for now, works i think but is wonky
+        // myMissleRb.AddForce(new Vector3(0,0,1) * missleForce, ForceMode.Acceleration);
+
+      
 
         //testing RB velocity instead so I can add multiplier and Acceleration
         //Rigidbody missleRB = GetComponent<Rigidbody>();
@@ -122,14 +135,12 @@ public class missle_guide_script : MonoBehaviour
         //transform.Translate(Vector3.forward.y + 5f);
 
         //temp disabled to figure out speed 4/12
-        //StartCoroutine("TargetTrackingDelay");
+        StartCoroutine("TargetTrackingDelay");
 
-        //4/25/24
-        // testing adding an acceleration force
-        myMissleRb.AddForce(Vector3.forward * 2f, ForceMode.Acceleration);
+      
 
 
-        Destroy(gameObject,5f);
+        Destroy(gameObject,6f);
         
 
         
@@ -146,13 +157,13 @@ public class missle_guide_script : MonoBehaviour
 
     //temp disabled 4/12 till testing missle speed + player speed
 
-    //IEnumerator TargetTrackingDelay()
-    //{
-    //    yield return new WaitForSeconds(trackingDelay);
-    //    lockedOn = true;
-    //    targetTracking = true;
-    //    StartGuiding();
-    //}
+    IEnumerator TargetTrackingDelay()
+    {
+        yield return new WaitForSeconds(trackingDelay);
+        lockedOn = true;
+        targetTracking = true;
+       // StartGuiding();
+    }
 
     //public void ActivateMissle()
     //{

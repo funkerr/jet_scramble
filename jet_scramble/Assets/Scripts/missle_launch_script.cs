@@ -15,12 +15,13 @@ public class missle_launch_script : MonoBehaviour
     [Foldout("Gameobjects")]
     public GameObject missilePrefab;
     public GameObject missilePrefab2;
-    public GameObject[] targets = new GameObject[2];
+    //public GameObject[] targets = new GameObject[2];
 
     [Foldout("Transforms")]
     public Transform firePoint_left;
     public Transform firePoint_right;
     public Transform target;
+    public Transform DebugLineTransform;
 
     [Foldout("Bools")]
     public bool lockedOn = false;
@@ -41,6 +42,7 @@ public class missle_launch_script : MonoBehaviour
         //Debug.Log($"Detected: {d}");
 
         //Testing what is detected by Triggersensor
+        Debug.DrawLine(this.transform.position, DebugLineTransform.position, Color.red);
         foreach (GameObject x in sensor.GetDetected())
         {
       
@@ -94,29 +96,12 @@ public class missle_launch_script : MonoBehaviour
                 GameObject missle_left = Instantiate(missilePrefab, firePoint_left.position, firePoint_left.rotation);
                 missle_left_fb.PlayFeedbacks();
                 StartCoroutine("FireSecondMissle");
-                
-
-            Debug.Log("Fired Missle!");
+                Debug.Log("Fired Missle!");
 
             }
         //}
 
     }
-
-    //public void TestMissle()
-    //{
-        
-    //    {
-    //        if (Input.GetKeyDown(KeyCode.O))
-    //        {
-
-    //            GameObject missle = Instantiate(missilePrefab2, firePoint.position, firePoint.rotation);
-
-    //            Debug.Log("Fired Missle!");
-
-    //        }
-    //    }
-    //}
 
     IEnumerator FireSecondMissle() 
 

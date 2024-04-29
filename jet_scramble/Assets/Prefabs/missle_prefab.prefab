@@ -64,12 +64,14 @@ MonoBehaviour:
   accelerateActiveTime: 0
   speedTomagnitude: 0
   missleSpeedmodifer: 0
+  missleForce: 200
   myTarget: {fileID: 0}
   lockedOn: 0
   targetTracking: 0
   isAccelerating: 0
   fxExplode: {fileID: 460088743619500491}
   myMissleRb: {fileID: -8822793304175730903}
+  targetList: []
 --- !u!54 &-8822793304175730903
 Rigidbody:
   m_ObjectHideFlags: 0
