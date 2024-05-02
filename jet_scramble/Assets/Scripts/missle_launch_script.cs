@@ -12,10 +12,12 @@ using MoreMountains.Feedbacks;
 
 public class missle_launch_script : MonoBehaviour
 {
+    [Foldout("Floats")]
+    public float targetTimeout;
+
     [Foldout("Gameobjects")]
     public GameObject missilePrefab;
     public GameObject missilePrefab2;
-    //public GameObject[] targets = new GameObject[2];
 
     [Foldout("Transforms")]
     public Transform firePoint_left;
@@ -25,6 +27,7 @@ public class missle_launch_script : MonoBehaviour
 
     [Foldout("Bools")]
     public bool lockedOn = false;
+    public bool canFireMissle = true;
 
     [Foldout("Sensors")]
     public TriggerSensor sensor;
@@ -38,17 +41,34 @@ public class missle_launch_script : MonoBehaviour
 
     void Update()
     {
+
+        //Debug.Log(targetsFound.Count);
+
+
+
         //var d = sensor.GetDetected();  //<--- THIS RETURNS A LIST
         //Debug.Log($"Detected: {d}");
 
         //Testing what is detected by Triggersensor
+       
+        //test line for radar sensor 400m red line
         Debug.DrawLine(this.transform.position, DebugLineTransform.position, Color.red);
+
         foreach (GameObject x in sensor.GetDetected())
         {
       
             if(!targetsFound.Contains(x))
             {
                 targetsFound.Add(x);
+                if(targetsFound.Count==0)
+                {
+                    canFireMissle= false;
+                }
+                else if(targetsFound.Count > 0)
+                {
+                    canFireMissle= true;
+                }
+
             }
             
             

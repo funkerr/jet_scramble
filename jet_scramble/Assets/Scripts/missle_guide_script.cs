@@ -18,12 +18,12 @@ public class missle_guide_script : MonoBehaviour
     public float missileSpeed;
     public float rotationSpeed;
     public float trackingDelay;
-    public float acceleration;
-    public float accelerationTime;
-    public float accelerateActiveTime;
-    public float speedTomagnitude;
-    public float missleSpeedmodifer;
-    public float missleForce;
+    public float missleRotateSpeed;
+    //public float acceleration;
+    //public float accelerationTime;
+    //public float accelerateActiveTime;
+    //public float missleSpeedmodifer;
+    //public float missleForce;
 
     public Transform myTarget;
 
@@ -38,7 +38,11 @@ public class missle_guide_script : MonoBehaviour
     [Foldout("RigidBodies")]
     public Rigidbody myMissleRb;
 
+    [Foldout("Lists")]
     public List<GameObject> targetList = new List<GameObject>();
+
+    [Foldout("Feedbacks")]
+    public MMF_Player missle_feedback;
 
     
     
@@ -66,6 +70,8 @@ public class missle_guide_script : MonoBehaviour
         playerSpeed = myPlayer.currentSpeed;
         missileSpeed = missileSpeed + playerSpeed;
 
+        missle_feedback.PlayFeedbacks();
+
 
     }
     public void Update()
@@ -75,7 +81,7 @@ public class missle_guide_script : MonoBehaviour
     //Update is called once per frame
     void FixedUpdate()
     {
-
+        RotateMissle();
         //works for now
         //if(lockedOn)
         //{
@@ -139,8 +145,8 @@ public class missle_guide_script : MonoBehaviour
 
       
 
-
-        Destroy(gameObject,6f);
+        // used to destroy, temp disabled 5/2
+        //Destroy(gameObject,6f);
         
 
         
@@ -180,9 +186,14 @@ public class missle_guide_script : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-    //    Debug.Log("Missle hit target: " + col.gameObject);
+          Debug.Log("Missle hit target: " + col.gameObject);
           Destroy(gameObject,.005f);
     
+    }
+
+    public void RotateMissle()
+    {
+        transform.Rotate(0, 0, missleRotateSpeed * Time.deltaTime);
     }
 
 
