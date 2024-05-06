@@ -29,6 +29,7 @@ public class shoot_bullets_script : MonoBehaviour
 
     //public PhotonView myPhotonview;
 
+
     public AudioSource bulletSound;
 
     //public bool hasAmmo = true;
@@ -82,10 +83,12 @@ public class shoot_bullets_script : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Mouse0) && (allowFire))
         {
+            Debug.Log("Got to bullet mouse press?");
             Rigidbody bulletClone;
             ParticleSystem gunFlash;
             ParticleSystem  bulletShellClone;
             bulletSound.Play();
+        
 
             gunFlash = Instantiate(bulletEffect, transform.position, transform.rotation);  //work on the gun flash moving //yes!! tranform move to parent upon instantiate  works!
             gunFlash.transform.parent = gunFlashParent.transform;
@@ -117,7 +120,14 @@ public class shoot_bullets_script : MonoBehaviour
     //        if(myPlayerManagerScript.myPlayerAmmo.bullets == 0)
     //        allowFire = false;
     //    }
-   
+
+    private void OnCollisionEnter(Collision col)
+    {
+        Debug.Log("Bullet hit something: " + col.gameObject);
+        //Destroy(gameObject, .005f);
+
+    }
+
 
 
 

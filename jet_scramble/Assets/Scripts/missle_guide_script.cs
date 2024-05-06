@@ -42,7 +42,7 @@ public class missle_guide_script : MonoBehaviour
     public List<GameObject> targetList = new List<GameObject>();
 
     [Foldout("Feedbacks")]
-    public MMF_Player missle_feedback;
+    //public MMF_Player missle_feedback;
 
     
     
@@ -70,7 +70,7 @@ public class missle_guide_script : MonoBehaviour
         playerSpeed = myPlayer.currentSpeed;
         missileSpeed = missileSpeed + playerSpeed;
 
-        missle_feedback.PlayFeedbacks();
+        //missle_feedback.PlayFeedbacks();
 
 
     }

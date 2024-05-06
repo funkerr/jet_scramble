@@ -201,7 +201,7 @@ MonoBehaviour:
           TargetObject: {fileID: 1666831694137727337}
           TargetComponent: {fileID: 4794845077864775005}
           TargetScriptableObject: {fileID: 0}
-          TargetPropertyName: 
+          TargetPropertyName: missleRotateSpeed
           ShouldModifyValue: 1
           RelativeValue: 1
           ModifyX: 1
@@ -215,8 +215,8 @@ MonoBehaviour:
           StringRemapOne: One
           IntRemapZero: 0
           IntRemapOne: 1
-          FloatRemapZero: 0
-          FloatRemapOne: 1
+          FloatRemapZero: 100
+          FloatRemapOne: 400
           Vector2RemapZero: {x: 0, y: 0}
           Vector2RemapOne: {x: 1, y: 1}
           Vector3RemapZero: {x: 0, y: 0, z: 0}
@@ -334,6 +334,7 @@ MonoBehaviour:
   missileSpeed: 30
   rotationSpeed: 5
   trackingDelay: 1.5
+  missleRotateSpeed: 0
   myTarget: {fileID: 0}
   lockedOn: 0
   targetTracking: 0
