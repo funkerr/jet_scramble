@@ -11,6 +11,8 @@ TagManager:
   - Main Camera
   - Target Camera
   - groundtarget
+  - FX
+  - Radar
   layers:
   - Default
   - TransparentFX
@@ -23,7 +25,7 @@ TagManager:
   - RenderTextureLayer
   - TerrainLayer
   - ScreenSpaceCavity
-  - 
+  - Radar
   - 
   - 
   - 

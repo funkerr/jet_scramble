@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using MoreMountains.Feedbacks;
+using VInspector;
 
 
 public class shoot_bullets_script : MonoBehaviour
@@ -30,13 +32,13 @@ public class shoot_bullets_script : MonoBehaviour
     //public PhotonView myPhotonview;
 
 
-    public AudioSource bulletSound;
-
     //public bool hasAmmo = true;
 
     public float fireRate;
 
     public bool allowFire;
+
+    public MMF_Player bulletFeel;
 
 
 
@@ -83,11 +85,12 @@ public class shoot_bullets_script : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Mouse0) && (allowFire))
         {
-            Debug.Log("Got to bullet mouse press?");
+        
             Rigidbody bulletClone;
             ParticleSystem gunFlash;
             ParticleSystem  bulletShellClone;
-            bulletSound.Play();
+  
+            bulletFeel.PlayFeedbacks();
         
 
             gunFlash = Instantiate(bulletEffect, transform.position, transform.rotation);  //work on the gun flash moving //yes!! tranform move to parent upon instantiate  works!
@@ -95,6 +98,7 @@ public class shoot_bullets_script : MonoBehaviour
             
                        
             bulletClone = Instantiate(bulletPrefab, transform.position, transform.rotation) as Rigidbody;
+           
 
             
 

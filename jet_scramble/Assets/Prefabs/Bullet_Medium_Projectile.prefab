@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4231332468481010}
   - component: {fileID: 198474663198814734}
   - component: {fileID: 199454646651633794}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4892,7 +4892,7 @@ GameObject:
   - component: {fileID: 4109576336253410}
   - component: {fileID: 198782294973209882}
   - component: {fileID: 199460809115817730}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: flarespikes_thin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9722,7 +9722,8 @@ GameObject:
   - component: {fileID: 114409874962607200}
   - component: {fileID: 199866926003231802}
   - component: {fileID: 198971252353732916}
-  m_Layer: 0
+  - component: {fileID: 7899734032299330500}
+  m_Layer: 1
   m_Name: Bullet_Medium_Projectile
   m_TagString: FX
   m_Icon: {fileID: 0}
@@ -9881,14 +9882,14 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 2
+    m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &114409874962607200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14723,6 +14724,20 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &7899734032299330500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796749963149706}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd01999bacf61084f9e43644fe4402f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colToIgnore: {fileID: 0}
+  IgnoreRadar: {fileID: 0}
 --- !u!1 &1924905033165216
 GameObject:
   m_ObjectHideFlags: 0
@@ -14734,7 +14749,7 @@ GameObject:
   - component: {fileID: 4463432083314552}
   - component: {fileID: 198248423902307404}
   - component: {fileID: 199560987669873558}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
