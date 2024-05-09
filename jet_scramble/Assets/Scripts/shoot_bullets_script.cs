@@ -8,39 +8,47 @@ using VInspector;
 
 public class shoot_bullets_script : MonoBehaviour
 {
-
+    [Foldout("Transforms")]
     public Transform bulletSpawnPoint;
+    public Transform spentShell_right1;
+    public Transform explodeEffectSpawn1;
+    public Transform gunFlashParent;
 
+    [Foldout("Rigidbodies")]
     public Rigidbody bulletPrefab;
- 
+
+    [Foldout("ParticleSystems")]
     public ParticleSystem spentShells;
     public ParticleSystem bulletEffect;
 
+    [Foldout("Floats")]
     public float currentBulletSpeed;
     public float bulletForce;
     public float bulletCount;
     public float airSpeed;
 
-    public Transform spentShell_right1;
-    public Transform explodeEffectSpawn1;
-    public Transform gunFlashParent;
-
-
-    public EasyAirplaneControls airPlaneScript;
     //public PlayerManagerScript myPlayerManagerScript;
 
     //public PhotonView myPhotonview;
 
-
     //public bool hasAmmo = true;
-
+    [Foldout("FireAttributes")]
     public float fireRate;
-
     public bool allowFire;
 
+    [Foldout("Feels")]
     public MMF_Player bulletFeel;
 
 
+    [Tab("Player Refs")]
+    public EasyAirplaneControls airPlaneScript;
+
+
+    [Button("PlayFeels")]
+    void StartFeels()
+    {
+        bulletFeel.PlayFeedbacks();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -89,7 +97,8 @@ public class shoot_bullets_script : MonoBehaviour
             Rigidbody bulletClone;
             ParticleSystem gunFlash;
             ParticleSystem  bulletShellClone;
-  
+
+           
             bulletFeel.PlayFeedbacks();
         
 

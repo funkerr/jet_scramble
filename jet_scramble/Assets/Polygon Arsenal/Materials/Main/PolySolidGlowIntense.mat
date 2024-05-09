@@ -28,7 +28,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_SpriteShaderSoftADD:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 0bdb020a90b5f5247ab5695053e84e11, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -86,9 +86,9 @@ Material:
     m_Ints: []
     m_Floats:
     - Intensity: 1
-    - Intensity_SpriteShaderSoftADD: 3
-    - SPF_SpriteShaderSoftADD: 9
-    - SP_SpriteShaderSoftADD: 1
+    - Intensity_SpriteShaderSoftADD: 10
+    - SPF_SpriteShaderSoftADD: 10
+    - SP_SpriteShaderSoftADD: 0
     - SoftParticleToggle_: 1
     - SoftParticle_: 3.54
     - _AlphaClip: 0

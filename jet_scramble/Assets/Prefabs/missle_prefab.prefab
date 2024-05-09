@@ -361,7 +361,7 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 2
+    m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
@@ -522,9 +522,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2374792022568438200}
     m_Modifications:
+    - target: {fileID: 1268100329906582, guid: 65932b7368590234d8163da03c2055d8, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851072841808772, guid: 65932b7368590234d8163da03c2055d8, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1879769179923522, guid: 65932b7368590234d8163da03c2055d8, type: 3}
       propertyPath: m_Name
       value: FX_Explosion_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1879769179923522, guid: 65932b7368590234d8163da03c2055d8, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1879769179923522, guid: 65932b7368590234d8163da03c2055d8, type: 3}
       propertyPath: m_IsActive
@@ -628,7 +640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1753891630631016, guid: ab15732f9da12cf42a66e3034d472663, type: 3}
       propertyPath: m_Layer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4190176030238008, guid: ab15732f9da12cf42a66e3034d472663, type: 3}
       propertyPath: m_LocalPosition.x
@@ -699,12 +711,28 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2374792022568438200}
     m_Modifications:
+    - target: {fileID: 1010119977784964, guid: 4cf45cdce36e66e4a93614abb5ae7821, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1056904543853562, guid: 4cf45cdce36e66e4a93614abb5ae7821, type: 3}
       propertyPath: m_Name
       value: FX_Explode
       objectReference: {fileID: 0}
     - target: {fileID: 1056904543853562, guid: 4cf45cdce36e66e4a93614abb5ae7821, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056904543853562, guid: 4cf45cdce36e66e4a93614abb5ae7821, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368536608535506, guid: 4cf45cdce36e66e4a93614abb5ae7821, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989805736563948, guid: 4cf45cdce36e66e4a93614abb5ae7821, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4020996693717984, guid: 4cf45cdce36e66e4a93614abb5ae7821, type: 3}
@@ -792,7 +820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1267369252621254, guid: f6d201bc8595a5b4f92f70df92d33aed, type: 3}
       propertyPath: m_Layer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4147673121654566, guid: f6d201bc8595a5b4f92f70df92d33aed, type: 3}
       propertyPath: m_LocalScale.x
@@ -880,6 +908,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2374792022568438200}
     m_Modifications:
+    - target: {fileID: 2895900777175402610, guid: 1300c0a3cbedce2418af45b95ad08a02,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3094470908161576522, guid: 1300c0a3cbedce2418af45b95ad08a02,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -965,15 +998,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jet01Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 6286345892844241114, guid: 1300c0a3cbedce2418af45b95ad08a02,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240123141979396571, guid: 1300c0a3cbedce2418af45b95ad08a02,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7240123141979396573, guid: 1300c0a3cbedce2418af45b95ad08a02,
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7240123142160577659, guid: 1300c0a3cbedce2418af45b95ad08a02,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7240123142160577661, guid: 1300c0a3cbedce2418af45b95ad08a02,
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240123142307365933, guid: 1300c0a3cbedce2418af45b95ad08a02,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7240123142307365935, guid: 1300c0a3cbedce2418af45b95ad08a02,
         type: 3}
@@ -1002,6 +1055,14 @@ PrefabInstance:
     - target: {fileID: 1062157001075556, guid: eac7894746a985341a280e45d7abac75, type: 3}
       propertyPath: m_Name
       value: BrightSmokeTrail
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062157001075556, guid: eac7894746a985341a280e45d7abac75, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881064779184948, guid: eac7894746a985341a280e45d7abac75, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4058907019804076, guid: eac7894746a985341a280e45d7abac75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1075,6 +1136,10 @@ PrefabInstance:
     - target: {fileID: 1799022065362878, guid: da17a613b68ae05468351a2c3f7d7530, type: 3}
       propertyPath: m_Name
       value: Rocket09_Grey
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799022065362878, guid: da17a613b68ae05468351a2c3f7d7530, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4473131188008628, guid: da17a613b68ae05468351a2c3f7d7530, type: 3}
       propertyPath: m_LocalPosition.x
