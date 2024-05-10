@@ -65,10 +65,11 @@ public class missle_guide_script : MonoBehaviour
 
         fxExplode.SetActive(false);
 
-        Debug.Log("Player Speed is: " + playerSpeed);
-        Debug.Log("Current missle speed should be " + missileSpeed);
         playerSpeed = myPlayer.currentSpeed;
         missileSpeed = missileSpeed + playerSpeed;
+        Debug.Log("Player Speed is: " + playerSpeed);
+        Debug.Log("Current missle speed should be " + missileSpeed);
+        
 
         //missle_feedback.PlayFeedbacks();
 

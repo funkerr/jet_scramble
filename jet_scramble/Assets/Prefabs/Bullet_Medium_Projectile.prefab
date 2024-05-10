@@ -4830,7 +4830,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: be8a68a4ceb83f947b32e8cd8e36d668, type: 2}
-  - {fileID: 2100000, guid: be8a68a4ceb83f947b32e8cd8e36d668, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9657,7 +9656,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 1d4efe2e7e01f2a408fa16199f23230d, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9718,11 +9716,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4736024230581622}
   - component: {fileID: 114878710379795836}
-  - component: {fileID: 54212628334827884}
   - component: {fileID: 114409874962607200}
   - component: {fileID: 199866926003231802}
   - component: {fileID: 198971252353732916}
-  - component: {fileID: 7899734032299330500}
+  - component: {fileID: 4052059026370070478}
   m_Layer: 0
   m_Name: Bullet_Medium_Projectile
   m_TagString: FX
@@ -9863,33 +9860,6 @@ MonoBehaviour:
       m_NumAlphaKeys: 3
   applyChanges: 0
   Keep_applyChanges: 0
---- !u!54 &54212628334827884
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796749963149706}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 2048
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!114 &114409874962607200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9906,7 +9876,7 @@ MonoBehaviour:
     type: 3}
   explosionPrefab: {fileID: 0}
   thrust: 0
-  thisRigidbody: {fileID: 54212628334827884}
+  thisRigidbody: {fileID: 0}
   particleKillGroup: {fileID: 0}
   LookRotation: 1
   Missile: 0
@@ -9938,7 +9908,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14724,20 +14693,33 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &7899734032299330500
-MonoBehaviour:
+--- !u!54 &4052059026370070478
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796749963149706}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd01999bacf61084f9e43644fe4402f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colToIgnore: {fileID: 0}
-  IgnoreRadar: {fileID: 0}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1924905033165216
 GameObject:
   m_ObjectHideFlags: 0
@@ -19513,7 +19495,6 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5761576d2d8b55549bb01953b3d2a60c, type: 2}
   - {fileID: 2100000, guid: 5761576d2d8b55549bb01953b3d2a60c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
