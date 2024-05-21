@@ -42,7 +42,7 @@ public class missle_guide_script : MonoBehaviour
     public List<GameObject> targetList = new List<GameObject>();
 
     [Foldout("Feedbacks")]
-    //public MMF_Player missle_feedback;
+    public MMF_Player missle_feedback;
 
     
     
@@ -169,7 +169,7 @@ public class missle_guide_script : MonoBehaviour
         yield return new WaitForSeconds(trackingDelay);
         lockedOn = true;
         targetTracking = true;
-       // StartGuiding();
+        StartGuiding();
     }
 
     //public void ActivateMissle()

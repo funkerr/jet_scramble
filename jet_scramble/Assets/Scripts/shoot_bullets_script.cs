@@ -112,6 +112,7 @@ public class shoot_bullets_script : MonoBehaviour
             
 
             bulletShellClone = Instantiate(spentShells, transform.position, transform.rotation);
+            bulletShellClone.transform.parent = gunFlashParent.transform; //test 5/10
 
             //myPlayerManagerScript.myPlayerAmmo.bullets--;
 
