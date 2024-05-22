@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 using System.Reflection;
 using UnityEditor;
+using Type = System.Type;
 using Tab = VInspector.VInspectorData.Tab;
 using static VInspector.VInspectorData;
 using static VInspector.Libs.VUtils;
@@ -79,6 +80,9 @@ namespace VInspector
                 var drawingFoldoutPath = "";
                 var hide = false;
                 var disable = false;
+
+                var prevFieldDeclaringType = default(Type);
+
 
                 void ensureNeededTabsDrawn()
                 {
@@ -162,13 +166,21 @@ namespace VInspector
                         if (ifAttribute is DisableIfAttribute) disable = ifAttribute.Evaluate(target);
                         if (ifAttribute is EnableIfAttribute) disable = !ifAttribute.Evaluate(target);
 
+
+                        var curFieldDeclaringType = fieldInfo.DeclaringType;
+
+                        if (prevFieldDeclaringType != null && prevFieldDeclaringType != curFieldDeclaringType)
+                            hide = disable = false;
+
+                        prevFieldDeclaringType = curFieldDeclaringType;
+
                     }
                     void tabs()
                     {
                         var tabAttribute = fieldInfo.GetCustomAttribute<TabAttribute>();
                         var endTabAttribute = fieldInfo.GetCustomAttribute<EndTabAttribute>();
-                        if (tabAttribute != null) { drawingTabPath = tabAttribute.name; drawingFoldoutPath = ""; hide = disable = false; }
                         if (endTabAttribute != null) { drawingTabPath = ""; drawingFoldoutPath = ""; hide = disable = false; }
+                        if (tabAttribute != null) { drawingTabPath = tabAttribute.name; drawingFoldoutPath = ""; hide = disable = false; }
 
 
                         ensureNeededTabsDrawn();
@@ -179,8 +191,8 @@ namespace VInspector
                         var foldoutAttribute = fieldInfo.GetCustomAttribute<FoldoutAttribute>();
                         var endFoldoutAttribute = fieldInfo.GetCustomAttribute<EndFoldoutAttribute>();
                         var newFoldoutPath = drawingFoldoutPath;
-                        if (foldoutAttribute != null) newFoldoutPath = foldoutAttribute.name;
                         if (endFoldoutAttribute != null) newFoldoutPath = "";
+                        if (foldoutAttribute != null) newFoldoutPath = foldoutAttribute.name;
 
                         var drawingPathSplit = drawingFoldoutPath.Split('/').Where(r => r != "").ToArray();
                         var newPathSplit = newFoldoutPath.Split('/').Where(r => r != "").ToArray();
@@ -213,19 +225,25 @@ namespace VInspector
 
 
 
-
                     findFieldInfo();
 
                     if (fieldInfo == null) return;
                     if (fieldInfo.FieldType == typeof(VInspectorData)) return;
-                    if (fieldInfo.GetCustomAttribute<ButtonAttribute>() != null) return;
 
+
+
+
+                    ifs();
+
+                    if (hide) return;
+
+                    GUI.enabled = !disable;
 
 
 
                     tabs();
 
-                    if (!selectedTabPath.StartsWith(drawingTabPath)) return;
+                    if (selectedTabPath != drawingTabPath && !selectedTabPath.StartsWith(drawingTabPath + "/")) return;
 
                     noVariablesShown = false;
 
@@ -239,14 +257,7 @@ namespace VInspector
 
 
 
-                    ifs();
-
-                    if (hide) return;
-
-                    GUI.enabled = !disable;
-
-
-
+                    if (fieldInfo.GetCustomAttribute<ButtonAttribute>() != null) return;
 
                     updateIndentLevel(drawingFoldoutPath);
 
@@ -290,11 +301,14 @@ namespace VInspector
                     GUILayout.Space(button.space - 2);
 
                     GUI.backgroundColor = button.isPressed() ? pressedButtonCol : Color.white;
+
                     if (GUILayout.Button(button.name, GUILayout.Height(button.size)))
-                    {
-                        target.RecordUndo();
-                        button.action();
-                    }
+                        foreach (var target in targets)
+                        {
+                            target.RecordUndo();
+                            button.action(target);
+                        }
+
                     GUI.backgroundColor = Color.white;
 
 
@@ -337,20 +351,73 @@ namespace VInspector
         {
             var serializedDataField = target.GetType().GetFields(maxBindingFlags).FirstOrDefault(r => r.FieldType == typeof(VInspectorData));
 
-            if (datasByTarget.ContainsKey(target) && datasByTarget[target] != null)
-                data = datasByTarget[target];
-            else
-                data = datasByTarget[target] = (VInspectorData)(serializedDataField?.GetValue(target)) ?? ScriptableObject.CreateInstance<VInspectorData>();
+            void getCached()
+            {
+                if (!VInspectorCache.instance.datas_byTarget.ContainsKey(target)) return;
 
-            serializedDataField?.SetValue(target, data);
+                VInspectorCache.EnsureDataIsAlive(target);
+
+                data = VInspectorCache.instance.datas_byTarget[target];
+
+            }
+            void getSerialized()
+            {
+                if (data) return;
+                if (serializedDataField == null) return;
+
+                data = serializedDataField.GetValue(target) as VInspectorData;
+
+            }
+            void createNew()
+            {
+                if (data) return;
+
+                data = ScriptableObject.CreateInstance<VInspectorData>();
+
+            }
+
+            void markTargetDirty()
+            {
+                if (!target) return;
+                if (!PrefabUtility.IsPartOfPrefabInstance(target)) return;
+                if (serializedDataField == null) return;
+                if (serializedDataField.GetValue(target) != null) return;
+
+                target.Dirty();
+
+                // serialized data field field won't be marked as prefab override without marking taget dirty for some reason
+                // fixes data not getting serialized on prefab instances
+
+            }
+
+            void cache()
+            {
+                VInspectorCache.instance.datas_byTarget[target] = data;
+            }
+            void serialize()
+            {
+                if (serializedDataField == null) return;
+
+                serializedDataField.SetValue(target, data);
+
+            }
+
+
+            getCached();
+            getSerialized();
+            createNew();
+
+            markTargetDirty();
+
+            cache();
+            serialize();
 
             data.Setup(target);
             data.Dirty();
 
         }
 
-
-
+        //
 
         void CheckScriptMissing()
         {
@@ -396,7 +463,7 @@ namespace VInspector
 
 
 
-        const string version = "1.2.23";
+        const string version = "1.2.31";
 
     }
 }

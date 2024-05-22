@@ -180,7 +180,11 @@ namespace VFolders
                 },
                 new[]
                 {
+#if UNITY_6000_0_OR_NEWER
+                    "PhysicsMaterial Icon",
+#else
                     "PhysicMaterial Icon",
+#endif
                     "BoxCollider Icon",
                     "TerrainCollider Icon",
                     "MeshCollider Icon",

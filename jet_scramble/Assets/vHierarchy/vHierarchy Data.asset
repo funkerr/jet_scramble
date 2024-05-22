@@ -16,6 +16,9 @@ MonoBehaviour:
     keys:
     - f2ff3023937b4ee4193a76a49b23886a
     - 
+    - 7d6d6a48f2686444ca9321496bc1dc3c
+    - 0d68e884a248d104cafbe204b243d4e5
+    - 044a33e3a22770e4ca11a8a447f7a6f7
     values:
     - goDatasByGlobalId:
         keys:
@@ -27,6 +30,8 @@ MonoBehaviour:
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1824429891-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-645648871-0
         - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-1445596059-0
+        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-5638021280938902188-1530037420
+        - GlobalObjectId_V1-2-f2ff3023937b4ee4193a76a49b23886a-5638021280938902188-149845148
         values:
         - iColor: 0
           icon: Terrain Icon
@@ -44,8 +49,12 @@ MonoBehaviour:
           icon: StandaloneInputModule Icon
         - iColor: 0
           icon: StandaloneInputModule Icon
+        - iColor: 8
+          icon: 
+        - iColor: 8
+          icon: 
       goDatasByInstanceId:
-        keys: 34880100ba8801004a8a0100f48801006e880100aa8b01003c88010036890100b28a0100
+        keys: a68a0000568b0000408c0000748b0000e68a0000688d00008c8b0000a68c0000cc8a01007c8b0100668c01009a8b01000c8b0100988d0100b28b0100d48c0100f0b30100a0b401008ab50100beb4010030b40100bcb60100d6b40100f8b50100f6520200a653020090540200c453020036530200c2550200dc530200fe54020040550200dc520200
         values:
         - iColor: 0
           icon: Terrain Icon
@@ -59,12 +68,80 @@ MonoBehaviour:
           icon: Camera Icon
         - iColor: 0
           icon: ScriptableObject Icon
-        - iColor: 4
-          icon: AvatarMask On Icon
         - iColor: 0
           icon: StandaloneInputModule Icon
         - iColor: 0
           icon: StandaloneInputModule Icon
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: AudioReverbZone Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: ScriptableObject Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: AudioReverbZone Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: ScriptableObject Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: AudioReverbZone Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: ScriptableObject Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 8
+          icon: 
+        - iColor: 8
+          icon: 
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []
     - goDatasByGlobalId:
         keys: []
         values: []
