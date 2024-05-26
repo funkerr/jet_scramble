@@ -22,14 +22,14 @@ public class PlanePropeller : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         power = Mathf.Lerp(power, planeMovement.throttle, 1*Time.deltaTime);
-        if (power > 0.5f) {
+       // if (power > 0.5f) {
             high.SetActive(true);
-            low.SetActive(false);
-        } else {
-            high.SetActive(false);
-            low.SetActive(true);
+            //low.SetActive(false);
+         //else {
+            //high.SetActive(false);
+            //low.SetActive(true);
             lowrot += (power+0.05f) * 8000f * randomizer * Time.deltaTime;
             low.transform.localRotation = Quaternion.Euler(0, 0, lowrot);
-        }
+        
 	}
 }

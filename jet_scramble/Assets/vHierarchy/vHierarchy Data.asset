@@ -19,6 +19,7 @@ MonoBehaviour:
     - 7d6d6a48f2686444ca9321496bc1dc3c
     - 0d68e884a248d104cafbe204b243d4e5
     - 044a33e3a22770e4ca11a8a447f7a6f7
+    - 4c45e9d3a666d724fb1e45f32c2f8602
     values:
     - goDatasByGlobalId:
         keys:
@@ -54,7 +55,7 @@ MonoBehaviour:
         - iColor: 8
           icon: 
       goDatasByInstanceId:
-        keys: a68a0000568b0000408c0000748b0000e68a0000688d00008c8b0000a68c0000cc8a01007c8b0100668c01009a8b01000c8b0100988d0100b28b0100d48c0100f0b30100a0b401008ab50100beb4010030b40100bcb60100d6b40100f8b50100f6520200a653020090540200c453020036530200c2550200dc530200fe54020040550200dc520200
+        keys: a68a0000568b0000408c0000748b0000e68a0000688d00008c8b0000a68c0000cc8a01007c8b0100668c01009a8b01000c8b0100988d0100b28b0100d48c0100f0b30100a0b401008ab50100beb4010030b40100bcb60100d6b40100f8b50100f6520200a653020090540200c453020036530200c2550200dc530200fe54020040550200dc52020026dc0300d6dc0300c0dd0300f4dc030066dc0300f2de03000cdd03002ede030070de03000cdc030030f00300e0f00300caf10300fef0030070f00300fcf2030016f1030038f203007af2030016f00300
         values:
         - iColor: 0
           icon: Terrain Icon
@@ -124,6 +125,46 @@ MonoBehaviour:
           icon: 
         - iColor: 8
           icon: 
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: AudioReverbZone Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: ScriptableObject Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 8
+          icon: 
+        - iColor: 8
+          icon: 
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: AudioReverbZone Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: ScriptableObject Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 8
+          icon: 
+        - iColor: 8
+          icon: 
     - goDatasByGlobalId:
         keys: []
         values: []
@@ -148,3 +189,16 @@ MonoBehaviour:
       goDatasByInstanceId:
         keys: 
         values: []
+    - goDatasByGlobalId:
+        keys:
+        - GlobalObjectId_V1-2-4c45e9d3a666d724fb1e45f32c2f8602-1985408071-0
+        values:
+        - iColor: 0
+          icon: 
+      goDatasByInstanceId:
+        keys: c60435ffb8f30300
+        values:
+        - iColor: 1
+          icon: 
+        - iColor: 0
+          icon: 
