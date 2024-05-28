@@ -1,12 +1,20 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MoreMountains.Feedbacks;
+using VInspector;
 
 public class stuka_bomb_script : MonoBehaviour
 {
 
-    public GameObject myBomb;
+    public Rigidbody myBomb;
     public ParticleSystem myBombExplosion;
+    public float bombVelocity;
+
+    [Foldout("Feedbacks")]
+
+    public MMF_Player stukaBombFeebackPlayer;
 
   
 
@@ -14,58 +22,51 @@ public class stuka_bomb_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myBomb.GetComponent<TrailRenderer>().emitting = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKey(KeyCode.B))
-        {
-            myBomb.GetComponent<Rigidbody>().useGravity = true;
-
-            StartCoroutine("DelayBombCollider");
-
-            //myBomb.GetComponent<BoxCollider>().enabled = true;
-            myBomb.GetComponent<TrailRenderer>().emitting = true;
-           
-        }
+        //myBomb.GetComponent<TrailRenderer>().emitting = false;
     }
 
     void OnCollisionEnter(Collision col)
     {
-        ContactPoint contact = col.contacts[0];
-        //Debug.Log(col.gameObject.name);
-
-        Debug.Log("Hit something: " + col.gameObject.name);
-        Instantiate(myBombExplosion, transform.position, transform.rotation);
-        myBomb.GetComponent<MeshRenderer>().enabled = false;
-       // myPlayerScript.myPlayerAmmo.bombs = 0;
-        Destroy(gameObject, 2f);
+        //ContactPoint contact = col.contacts[0];
+        Debug.Log(col.gameObject.name);
 
 
-        if (col.gameObject.tag == "Terrain")
+        if (col.gameObject.tag == "Ground")
         {
             Debug.Log("Hit terrain: " + col.gameObject.name);
             Instantiate(myBombExplosion, transform.position, transform.rotation);
-            myBomb.GetComponent<MeshRenderer>().enabled = false;
-           //myPlayerScript.myPlayerAmmo.bombs = 0;
-            Destroy(gameObject, 2f);
-            
 
-        }
+            stukaBombFeebackPlayer.PlayFeedbacks();
 
-        if (col.gameObject.tag == "Building")
-        {
-            Debug.Log("Hit Building: " + col.gameObject.name);
-            Instantiate(myBombExplosion, transform.position, transform.rotation);
             myBomb.GetComponent<MeshRenderer>().enabled = false;
             //myPlayerScript.myPlayerAmmo.bombs = 0;
             Destroy(gameObject, 2f);
 
 
         }
+
     }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.B))
+        {
+           // Rigidbody bombClone = Instantiate(myBomb, transform.position,transform.rotation) as Rigidbody;
+           
+
+            myBomb.GetComponent<Rigidbody>().useGravity = true;
+            myBomb.velocity  = transform.TransformDirection(Vector3.forward * bombVelocity);
+            //myBomb.transform.DOLocalRotate(new Vector3(45, 0, 0), 2, RotateMode.Fast);
+
+            StartCoroutine("DelayBombCollider");
+
+            //myBomb.GetComponent<BoxCollider>().enabled = true;
+            //myBomb.GetComponent<TrailRenderer>().emitting = true;
+           
+        }
+    }
+
+   
 
     IEnumerator DelayBombCollider()
     {
