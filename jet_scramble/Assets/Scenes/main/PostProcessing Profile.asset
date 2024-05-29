@@ -71,7 +71,7 @@ MonoBehaviour:
   intensity:
     m_OverrideState: 1
     m_Value: 0.005
---- !u!114 &-2782577805588637754
+--- !u!114 &-3570752835273717594
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,17 +88,17 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   contrast:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 5
   colorFilter:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 15
   saturation:
     m_OverrideState: 1
-    m_Value: 50
+    m_Value: 15
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   components:
   - {fileID: -8713606592662558848}
-  - {fileID: -2782577805588637754}
+  - {fileID: -3570752835273717594}
   - {fileID: 3769780038613471234}
   - {fileID: -7677559295669760524}
   - {fileID: 3479610442557426555}
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
   m_Name: ShadowsMidtonesHighlights
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   shadows:
     m_OverrideState: 1
     m_Value: {x: 0.88726556, y: 1, z: 0.9201267, w: 0}

@@ -30,51 +30,69 @@ public class FlapRotateScript : MonoBehaviour
 
         if(Input.GetKey(KeyCode.A))
         {
-            flap_r1.transform.DOLocalRotate(new Vector3(-29.898f, -13.042f, -14.198f), 1, RotateMode.Fast);
-        }
-        else
-        {
-            flap_r1.transform.DOLocalRotate(new Vector3(-0.652f, -20.088f, -12.277f), 1, RotateMode.Fast);
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            flap_r1.transform.DOLocalRotate(new Vector3(24.593f, -25.945f, -13.523f), 1, RotateMode.Fast);
-        }
-        else
-        {
-            flap_r1.transform.DOLocalRotate(new Vector3(-0.652f, -20.088f, -12.277f), 1, RotateMode.Fast);
-        }
-
+            //DOTween.ClearCachedTweens();
+            DOTween.KillAll();
+            flap_r1.transform.DOLocalRotate(new Vector3(40, 0, 0), 1);
+            flap_l1.transform.DOLocalRotate(new Vector3(40,0,0), 1);
+            //flap_r1.transform.DOLocalRotate(new Vector3(-40.2f, -9.633f, -16.164f), 1);
+            //flap_l1.transform.DOLocalRotate(new Vector3(-38.918f, -149.651f, -15.86f), 1);
   
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            flap_r2.transform.DOLocalRotate(new Vector3(-13.126f, -23.743f, 9.568f), 1, RotateMode.Fast);
         }
         else
         {
-            flap_r2.transform.DOLocalRotate(new Vector3(-0.412f, -21.618f, 9.316f), 1, RotateMode.Fast);
+            flap_r1.transform.DOLocalRotate(new Vector3(0, 0, 0), 1);
+            flap_l1.transform.DOLocalRotate(new Vector3(0, 0, 0), 1);
+            //    DOTween.ClearCachedTweens();
+            //    flap_r1.transform.DOLocalRotate(new Vector3(-0.652f, -20.088f, -12.277f), 1, RotateMode.Fast);
+            //    flap_l1.transform.DOLocalRotate(new Vector3(0.652f, -159.912f, -12.277f), 1, RotateMode.Fast);
         }
-
 
         if (Input.GetKey(KeyCode.D))
         {
-            flap_r2.transform.DOLocalRotate(new Vector3(24.561f, -17.252f, 10.252f), 1, RotateMode.Fast);
+            
+            flap_r1.transform.DOLocalRotate(new Vector3(-30, 0, 0), 1);
+            flap_l1.transform.DOLocalRotate(new Vector3(-30, 0, 0), 1);
+            //flap_r1.transform.DOLocalRotate(new Vector3(41.999f, -31.529f, -16.626f), 1, RotateMode.Fast);
+            //flap_l1.transform.DOLocalRotate(new Vector3(43.276f, -171.594f, -16.981f), 1, RotateMode.Fast);
         }
         else
         {
-            flap_r2.transform.DOLocalRotate(new Vector3(-0.412f, -21.618f, 9.316f), 1, RotateMode.Fast);
+           
+            flap_r1.transform.DOLocalRotate(new Vector3(0, 0, 0), 1);
+            flap_l1.transform.DOLocalRotate(new Vector3(0, 0, 0), 1);
+            //    flap_r1.transform.DOLocalRotate(new Vector3(-0.652f, -20.088f, -12.277f), 1, RotateMode.Fast);
+            //    flap_l1.transform.DOLocalRotate(new Vector3(0.652f, -159.912f, -12.277f), 1, RotateMode.Fast);
         }
 
-        if (Input.GetKey(KeyCode.A))
-        {
-            flap_l1.transform.DOLocalRotate(new Vector3(29.914f, -166.963f, -14.2f), 1);
-        }
-        else
-        {
-            flap_l1.transform.DOLocalRotate(new Vector3(-0.652f, -159.912f, -12.277f), 1, RotateMode.Fast);
-        }
+
+
+        //if (Input.GetKey(KeyCode.A))
+        //{
+        //    flap_r2.transform.DOLocalRotate(new Vector3(-13.126f, -23.743f, 9.568f), 1, RotateMode.Fast);
+        //}
+        //else
+        //{
+        //    flap_r2.transform.DOLocalRotate(new Vector3(-0.412f, -21.618f, 9.316f), 1, RotateMode.Fast);
+        //}
+
+
+        //if (Input.GetKey(KeyCode.D))
+        //{
+        //    flap_r2.transform.DOLocalRotate(new Vector3(24.561f, -17.252f, 10.252f), 1, RotateMode.Fast);
+        //}
+        //else
+        //{
+        //    flap_r2.transform.DOLocalRotate(new Vector3(-0.412f, -21.618f, 9.316f), 1, RotateMode.Fast);
+        //}
+
+        //if (Input.GetKey(KeyCode.A))
+        //{
+        //    flap_l1.transform.DOLocalRotate(new Vector3(43.276f, -171.594f, -16.981f), 1,RotateMode.Fast);
+        //}
+        //else
+        //{
+        //    flap_l1.transform.DOLocalRotate(new Vector3(0.652f, -159.912f, -12.277f), 1, RotateMode.Fast);
+        //}
 
     }
 }

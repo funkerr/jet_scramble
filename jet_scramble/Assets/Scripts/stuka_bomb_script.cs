@@ -13,7 +13,6 @@ public class stuka_bomb_script : MonoBehaviour
     public float bombVelocity;
 
     [Foldout("Feedbacks")]
-
     public MMF_Player stukaBombFeebackPlayer;
 
   
@@ -39,6 +38,7 @@ public class stuka_bomb_script : MonoBehaviour
             stukaBombFeebackPlayer.PlayFeedbacks();
 
             myBomb.GetComponent<MeshRenderer>().enabled = false;
+            myBomb.GetComponent<BoxCollider>().enabled = false;
             //myPlayerScript.myPlayerAmmo.bombs = 0;
             Destroy(gameObject, 2f);
 
