@@ -13,6 +13,7 @@ public class FlapRotateScript : MonoBehaviour
     public GameObject flap_r1;
     public GameObject flap_r2;
 
+
     [Foldout("LeftWings")]
     public GameObject flap_l1;
     public GameObject flap_l2;
@@ -36,7 +37,9 @@ public class FlapRotateScript : MonoBehaviour
             flap_l1.transform.DOLocalRotate(new Vector3(40,0,0), 1);
             //flap_r1.transform.DOLocalRotate(new Vector3(-40.2f, -9.633f, -16.164f), 1);
             //flap_l1.transform.DOLocalRotate(new Vector3(-38.918f, -149.651f, -15.86f), 1);
-  
+            flap_r2.transform.DOLocalRotate(new Vector3(40, 0, 0), 1);
+            flap_l2.transform.DOLocalRotate(new Vector3(40, 0, 0), 1);
+
         }
         else
         {
@@ -45,6 +48,8 @@ public class FlapRotateScript : MonoBehaviour
             //    DOTween.ClearCachedTweens();
             //    flap_r1.transform.DOLocalRotate(new Vector3(-0.652f, -20.088f, -12.277f), 1, RotateMode.Fast);
             //    flap_l1.transform.DOLocalRotate(new Vector3(0.652f, -159.912f, -12.277f), 1, RotateMode.Fast);
+            flap_r2.transform.DOLocalRotate(new Vector3(0, 0, 0), 1);
+            flap_l2.transform.DOLocalRotate(new Vector3(0, 0, 0), 1);
         }
 
         if (Input.GetKey(KeyCode.D))
