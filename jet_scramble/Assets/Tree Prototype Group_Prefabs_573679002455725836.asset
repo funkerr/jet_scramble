@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2aedad9cacd3b54996f2e6ef60fcff2, type: 3}
-  m_Name: UndoCompatibleBuffer
+  m_Script: {fileID: 11500000, guid: c7b712840779f4647baae93e0b9355d2, type: 3}
+  m_Name: Tree Prototype Group_Prefabs_573679002455725836
   m_EditorClassIdentifier: 
-  currentBackupName: ~Elevation Painting_2024530141148
+  prototypes:
+  - {fileID: 1652346088943958, guid: 72e52d8775e4b30499a3a6466d3e43cd, type: 3}
+  editor_PrefabAssetPaths: []

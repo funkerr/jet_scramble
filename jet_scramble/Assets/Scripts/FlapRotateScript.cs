@@ -59,6 +59,8 @@ public class FlapRotateScript : MonoBehaviour
             flap_l1.transform.DOLocalRotate(new Vector3(-30, 0, 0), 1);
             //flap_r1.transform.DOLocalRotate(new Vector3(41.999f, -31.529f, -16.626f), 1, RotateMode.Fast);
             //flap_l1.transform.DOLocalRotate(new Vector3(43.276f, -171.594f, -16.981f), 1, RotateMode.Fast);
+            flap_r2.transform.DOLocalRotate(new Vector3(-30, 0, 0), 1);
+            flap_l2.transform.DOLocalRotate(new Vector3(-30, 0, 0), 1);
         }
         else
         {
@@ -67,6 +69,8 @@ public class FlapRotateScript : MonoBehaviour
             flap_l1.transform.DOLocalRotate(new Vector3(0, 0, 0), 1);
             //    flap_r1.transform.DOLocalRotate(new Vector3(-0.652f, -20.088f, -12.277f), 1, RotateMode.Fast);
             //    flap_l1.transform.DOLocalRotate(new Vector3(0.652f, -159.912f, -12.277f), 1, RotateMode.Fast);
+            flap_r2.transform.DOLocalRotate(new Vector3(0, 0, 0), 1);
+            flap_l2.transform.DOLocalRotate(new Vector3(0, 0, 0), 1);
         }
 
 
