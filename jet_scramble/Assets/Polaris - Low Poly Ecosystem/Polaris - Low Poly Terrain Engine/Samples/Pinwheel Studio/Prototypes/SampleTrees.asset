@@ -148,3 +148,24 @@ MonoBehaviour:
     baseScale: {x: 1, y: 1, z: 1}
     editor_PrefabAssetPath: Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly
       Terrain Engine/Samples/Pinwheel Studio/Prefabs/Dead_Break.prefab
+  - prefab: {fileID: 1652346088943958, guid: 72e52d8775e4b30499a3a6466d3e43cd, type: 3}
+    sharedMesh: {fileID: 4300000, guid: d6af03a9a44ac814bbacca26b12d2293, type: 3}
+    sharedMaterials:
+    - {fileID: 2100000, guid: 22af96f9ba68eb54b9ce79bdf6661284, type: 2}
+    shadowCastingMode: 1
+    receiveShadow: 1
+    billboardShadowCastingMode: 0
+    billboardReceiveShadow: 0
+    layer: 0
+    keepPrefabLayer: 0
+    billboard: {fileID: 0}
+    hasCollider: 0
+    colliderInfo:
+      center: {x: 0, y: 0, z: 0}
+      radius: 0
+      height: 0
+      direction: 0
+    pivotOffset: 0
+    baseRotation: {x: 0, y: 0, z: 0, w: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    editor_PrefabAssetPath: Assets/PolygonWar/Prefabs/Environments/SM_Env_Tree_Pine_01.prefab

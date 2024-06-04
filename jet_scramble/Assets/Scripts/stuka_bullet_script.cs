@@ -6,21 +6,22 @@ using MoreMountains.Feedbacks;
 using VInspector;
 
 
-public class shoot_bullets_script : MonoBehaviour
+public class stuka_bullet_script : MonoBehaviour
 {
     [Foldout("Transforms")]
     public Transform bulletSpawnPoint_left;
     public Transform bulletSpawnPoint_right;
-    public Transform spentShell_right1;
-    public Transform explodeEffectSpawn1;
-    public Transform gunFlashParent;
+    //public Transform spentShell_right1;
+    //public Transform explodeEffectSpawn1;
+    //public Transform gunFlashParent;
+    public Transform bulletParent;
 
     [Foldout("Rigidbodies")]
     public Rigidbody bulletPrefab;
 
-    [Foldout("ParticleSystems")]
-    public ParticleSystem spentShells;
-    public ParticleSystem bulletEffect;
+    //[Foldout("ParticleSystems")]
+    //public ParticleSystem spentShells;
+    //public ParticleSystem bulletEffect;
 
     [Foldout("Floats")]
     public float currentBulletSpeed;
@@ -37,8 +38,8 @@ public class shoot_bullets_script : MonoBehaviour
     public float fireRate;
     public bool allowFire;
 
-    [Foldout("Feels")]
-    public MMF_Player bulletFeel;
+    //[Foldout("Feels")]
+    //public MMF_Player bulletFeel;
 
 
     [Foldout("Player Refs")]
@@ -48,7 +49,7 @@ public class shoot_bullets_script : MonoBehaviour
     [Button("PlayFeels")]
     void StartFeels()
     {
-        bulletFeel.PlayFeedbacks();
+        //bulletFeel.PlayFeedbacks();
     }
 
     // Start is called before the first frame update
@@ -56,7 +57,7 @@ public class shoot_bullets_script : MonoBehaviour
     {
        // bulletCount = myPlayerManagerScript.myPlayerAmmo.bullets;
       
-
+        allowFire= true;
 
     }
 
@@ -74,6 +75,7 @@ public class shoot_bullets_script : MonoBehaviour
 
     IEnumerator FiringRate()
     {
+        Debug.Log("Got to routine");
         allowFire = false;
         yield return new WaitForSeconds(fireRate);
         allowFire = true;
@@ -81,6 +83,7 @@ public class shoot_bullets_script : MonoBehaviour
 
     void Shoot()
     {
+       
         airSpeed = airPlaneScript.currentSpeed;
 
         if (airSpeed < 20)
@@ -100,20 +103,20 @@ public class shoot_bullets_script : MonoBehaviour
             ParticleSystem  bulletShellClone;
 
            
-            bulletFeel.PlayFeedbacks();
+            //bulletFeel.PlayFeedbacks();
         
 
-            gunFlash = Instantiate(bulletEffect, transform.position, transform.rotation);  //work on the gun flash moving //yes!! tranform move to parent upon instantiate  works!
-            gunFlash.transform.parent = gunFlashParent.transform;
+            //gunFlash = Instantiate(bulletEffect, transform.position, transform.rotation);  //work on the gun flash moving //yes!! tranform move to parent upon instantiate  works!
+            //gunFlash.transform.parent = gunFlashParent.transform;
             
                        
-            bulletClone = Instantiate(bulletPrefab, transform.position, transform.rotation) as Rigidbody;
-           
+            bulletClone = Instantiate(bulletPrefab, bulletSpawnPoint_left.position, bulletSpawnPoint_left.transform.rotation) as Rigidbody;
+            bulletClone.transform.parent = bulletParent.transform;
 
             
 
-            bulletShellClone = Instantiate(spentShells, transform.position, transform.rotation);
-            bulletShellClone.transform.parent = gunFlashParent.transform; //test 5/10
+            //bulletShellClone = Instantiate(spentShells, transform.position, transform.rotation);
+            //bulletShellClone.transform.parent = gunFlashParent.transform; //test 5/10
 
             //myPlayerManagerScript.myPlayerAmmo.bullets--;
 
@@ -122,7 +125,7 @@ public class shoot_bullets_script : MonoBehaviour
 
             //Debug.Log(myPlayerManager.myPlayerAmmo.bullets);
 
-            bulletClone.AddForce(transform.forward * bulletForce * currentBulletSpeed, ForceMode.Impulse);
+            //bulletClone.AddForce(transform.forward * bulletForce * currentBulletSpeed, ForceMode.Impulse);
         
             StartCoroutine("FiringRate");
 
