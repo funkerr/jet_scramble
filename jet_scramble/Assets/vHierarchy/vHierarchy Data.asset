@@ -20,6 +20,7 @@ MonoBehaviour:
     - 0d68e884a248d104cafbe204b243d4e5
     - 044a33e3a22770e4ca11a8a447f7a6f7
     - 4c45e9d3a666d724fb1e45f32c2f8602
+    - eea2e7abe04947d4989daf9db9b28bbe
     values:
     - goDatasByGlobalId:
         keys:
@@ -55,7 +56,7 @@ MonoBehaviour:
         - iColor: 8
           icon: 
       goDatasByInstanceId:
-        keys: a68a0000568b0000408c0000748b0000e68a0000688d00008c8b0000a68c0000cc8a01007c8b0100668c01009a8b01000c8b0100988d0100b28b0100d48c0100f0b30100a0b401008ab50100beb4010030b40100bcb60100d6b40100f8b50100f6520200a653020090540200c453020036530200c2550200dc530200fe54020040550200dc52020026dc0300d6dc0300c0dd0300f4dc030066dc0300f2de03000cdd03002ede030070de03000cdc030030f00300e0f00300caf10300fef0030070f00300fcf2030016f1030038f203007af2030016f00300
+        keys: 02ca0100b2ca01009ccb0100d0ca010042ca0100cecc0100e8ca01000acc01004ccc0100e8c9010046ea0100f6ea0100e0eb010014eb010086ea010012ed01002ceb01004eec010090ec01002cea01007c0702002c080200160902004a080200bc070200480a02006208020084090200c609020062070200f0140200a01502008a160200be15020030150200bc170200d6150200f81602003a170200d61402002c1e0200dc1e0200c61f0200fa1e02006c1e0200f8200200121f02003420020076200200121e0200ba6b02006a6c0200546d0200886c0200fa6b0200866e0200a06c0200c26d0200046e0200a06b020032af0200e2af0200ccb0020000b0020072af0200feb1020018b002003ab102007cb1020018af0200
         values:
         - iColor: 0
           icon: Terrain Icon
@@ -73,6 +74,10 @@ MonoBehaviour:
           icon: StandaloneInputModule Icon
         - iColor: 0
           icon: StandaloneInputModule Icon
+        - iColor: 8
+          icon: 
+        - iColor: 8
+          icon: 
         - iColor: 0
           icon: Terrain Icon
         - iColor: 0
@@ -89,6 +94,10 @@ MonoBehaviour:
           icon: StandaloneInputModule Icon
         - iColor: 0
           icon: StandaloneInputModule Icon
+        - iColor: 8
+          icon: 
+        - iColor: 8
+          icon: 
         - iColor: 0
           icon: Terrain Icon
         - iColor: 0
@@ -105,6 +114,30 @@ MonoBehaviour:
           icon: StandaloneInputModule Icon
         - iColor: 0
           icon: StandaloneInputModule Icon
+        - iColor: 8
+          icon: 
+        - iColor: 8
+          icon: 
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: AudioReverbZone Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: ScriptableObject Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 8
+          icon: 
+        - iColor: 8
+          icon: 
         - iColor: 0
           icon: Terrain Icon
         - iColor: 0
@@ -192,13 +225,27 @@ MonoBehaviour:
     - goDatasByGlobalId:
         keys:
         - GlobalObjectId_V1-2-4c45e9d3a666d724fb1e45f32c2f8602-1985408071-0
+        - GlobalObjectId_V1-2-4c45e9d3a666d724fb1e45f32c2f8602-258597954-0
         values:
         - iColor: 0
           icon: 
+        - iColor: 2
+          icon: Terrain Icon
       goDatasByInstanceId:
-        keys: c60435ffb8f30300
+        keys: c49400001a02ffff
         values:
-        - iColor: 1
-          icon: 
         - iColor: 0
           icon: 
+        - iColor: 2
+          icon: Terrain Icon
+    - goDatasByGlobalId:
+        keys:
+        - GlobalObjectId_V1-2-eea2e7abe04947d4989daf9db9b28bbe-258597954-0
+        values:
+        - iColor: 0
+          icon: Terrain Icon
+      goDatasByInstanceId:
+        keys: 5ab70200
+        values:
+        - iColor: 0
+          icon: Terrain Icon
