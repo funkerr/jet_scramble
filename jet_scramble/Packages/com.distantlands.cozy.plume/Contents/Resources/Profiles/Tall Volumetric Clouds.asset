@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdb441307b439a445a1de4f47a4ed6ef, type: 3}
   m_Name: Tall Volumetric Clouds
   m_EditorClassIdentifier: 
-  cloudDensity: 5
+  cloudDensity: 30
   cloudParticleSize: 159
   chunkSize: 215
-  minChunkHeight: 11.6
+  minChunkHeight: 6.2
   maxChunkHeight: 468
   renderDistance: 20
   cloudHeight: 900
