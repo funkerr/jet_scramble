@@ -5,12 +5,19 @@ using UnityEngine;
 using MoreMountains.Feedbacks;
 using VInspector;
 
+
 public class stuka_bomb_script : MonoBehaviour
 {
-
+    [Foldout("Rigids")]
     public Rigidbody myBomb;
+    public Rigidbody bombFrontRB;
+
+    [Foldout("Particles")]
     public ParticleSystem myBombExplosion;
+
+    [Foldout("Floats")]
     public float bombVelocity;
+    public float bombTiltAngle;
 
     [Foldout("Feedbacks")]
     public MMF_Player stukaBombFeebackPlayer;
@@ -47,7 +54,7 @@ public class stuka_bomb_script : MonoBehaviour
 
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if(Input.GetKeyDown(KeyCode.B))
         {
@@ -55,9 +62,10 @@ public class stuka_bomb_script : MonoBehaviour
            
 
             myBomb.GetComponent<Rigidbody>().useGravity = true;
+      
             myBomb.velocity  = transform.TransformDirection(Vector3.forward * bombVelocity);
             //myBomb.transform.DOLocalRotate(new Vector3(45, 0, 0), 2, RotateMode.Fast);
-
+            TiltBomb(bombTiltAngle);
             StartCoroutine("DelayBombCollider");
 
             //myBomb.GetComponent<BoxCollider>().enabled = true;
@@ -66,7 +74,11 @@ public class stuka_bomb_script : MonoBehaviour
         }
     }
 
-   
+    public void TiltBomb(float bombAngle)
+    {
+        //myBomb.transform.Rotate(new Vector3(bombAngle, 0, 0));
+        myBomb.transform.DOLocalRotate(new Vector3(bombAngle, 0, 0), 2f, RotateMode.Fast);
+    }
 
     IEnumerator DelayBombCollider()
     {

@@ -17,6 +17,18 @@
             "show": false,
             "typeName": "UnityEngine.AnimationClip",
             "GlobalObjectSerialization": "GlobalObjectId_V1-1-461662c06e3126646a0b35bf5fb4ff97-110800002-0"
+        },
+        {
+            "noteText": "Following Synty UI yt",
+            "show": true,
+            "typeName": "UnityEngine.GameObject",
+            "GlobalObjectSerialization": "GlobalObjectId_V1-2-7654a97a211b81f4ea329abdb1c5ec80-824583319-0"
+        },
+        {
+            "noteText": "",
+            "show": false,
+            "typeName": "UnityEngine.GameObject",
+            "GlobalObjectSerialization": "GlobalObjectId_V1-2-20fe0eb757c2a3c43b18c2c4686fc064-1644043210-0"
         }
     ]
 }

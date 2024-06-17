@@ -21,6 +21,7 @@ MonoBehaviour:
     - 044a33e3a22770e4ca11a8a447f7a6f7
     - 4c45e9d3a666d724fb1e45f32c2f8602
     - eea2e7abe04947d4989daf9db9b28bbe
+    - 6fcfa9c9787286547b2267edf0141c6f
     values:
     - goDatasByGlobalId:
         keys:
@@ -56,148 +57,8 @@ MonoBehaviour:
         - iColor: 8
           icon: 
       goDatasByInstanceId:
-        keys: 02ca0100b2ca01009ccb0100d0ca010042ca0100cecc0100e8ca01000acc01004ccc0100e8c9010046ea0100f6ea0100e0eb010014eb010086ea010012ed01002ceb01004eec010090ec01002cea01007c0702002c080200160902004a080200bc070200480a02006208020084090200c609020062070200f0140200a01502008a160200be15020030150200bc170200d6150200f81602003a170200d61402002c1e0200dc1e0200c61f0200fa1e02006c1e0200f8200200121f02003420020076200200121e0200ba6b02006a6c0200546d0200886c0200fa6b0200866e0200a06c0200c26d0200046e0200a06b020032af0200e2af0200ccb0020000b0020072af0200feb1020018b002003ab102007cb1020018af0200
-        values:
-        - iColor: 0
-          icon: Terrain Icon
-        - iColor: 0
-          icon: AudioReverbZone Icon
-        - iColor: 0
-          icon: DirectionalLight Icon
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 0
-          icon: Camera Icon
-        - iColor: 0
-          icon: ScriptableObject Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 0
-          icon: Terrain Icon
-        - iColor: 0
-          icon: AudioReverbZone Icon
-        - iColor: 0
-          icon: DirectionalLight Icon
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 0
-          icon: Camera Icon
-        - iColor: 0
-          icon: ScriptableObject Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 0
-          icon: Terrain Icon
-        - iColor: 0
-          icon: AudioReverbZone Icon
-        - iColor: 0
-          icon: DirectionalLight Icon
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 0
-          icon: Camera Icon
-        - iColor: 0
-          icon: ScriptableObject Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 0
-          icon: Terrain Icon
-        - iColor: 0
-          icon: AudioReverbZone Icon
-        - iColor: 0
-          icon: DirectionalLight Icon
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 0
-          icon: Camera Icon
-        - iColor: 0
-          icon: ScriptableObject Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 0
-          icon: Terrain Icon
-        - iColor: 0
-          icon: AudioReverbZone Icon
-        - iColor: 0
-          icon: DirectionalLight Icon
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 0
-          icon: Camera Icon
-        - iColor: 0
-          icon: ScriptableObject Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 0
-          icon: Terrain Icon
-        - iColor: 0
-          icon: AudioReverbZone Icon
-        - iColor: 0
-          icon: DirectionalLight Icon
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 0
-          icon: Camera Icon
-        - iColor: 0
-          icon: ScriptableObject Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 0
-          icon: Terrain Icon
-        - iColor: 0
-          icon: AudioReverbZone Icon
-        - iColor: 0
-          icon: DirectionalLight Icon
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 0
-          icon: Camera Icon
-        - iColor: 0
-          icon: ScriptableObject Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
+        keys: 
+        values: []
     - goDatasByGlobalId:
         keys: []
         values: []
@@ -232,20 +93,46 @@ MonoBehaviour:
         - iColor: 2
           icon: Terrain Icon
       goDatasByInstanceId:
-        keys: c49400001a02ffff
-        values:
-        - iColor: 0
-          icon: 
-        - iColor: 2
-          icon: Terrain Icon
+        keys: 
+        values: []
     - goDatasByGlobalId:
         keys:
         - GlobalObjectId_V1-2-eea2e7abe04947d4989daf9db9b28bbe-258597954-0
+        - GlobalObjectId_V1-2-eea2e7abe04947d4989daf9db9b28bbe-1192498760447478-374810502
+        - GlobalObjectId_V1-2-eea2e7abe04947d4989daf9db9b28bbe-1964499106-0
         values:
-        - iColor: 0
+        - iColor: 2
           icon: Terrain Icon
+        - iColor: 4
+          icon: Camera Icon
+        - iColor: 3
+          icon: 
       goDatasByInstanceId:
-        keys: 5ab70200
+        keys: 4e94000004850200f25a07009c6007002c650700
         values:
         - iColor: 0
           icon: Terrain Icon
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 2
+          icon: Terrain Icon
+        - iColor: 4
+          icon: Camera Icon
+        - iColor: 3
+          icon: 
+    - goDatasByGlobalId:
+        keys:
+        - GlobalObjectId_V1-2-6fcfa9c9787286547b2267edf0141c6f-258597954-0
+        - GlobalObjectId_V1-2-6fcfa9c9787286547b2267edf0141c6f-1192498760447478-374810502
+        values:
+        - iColor: 2
+          icon: Terrain Icon
+        - iColor: 0
+          icon: Camera Icon
+      goDatasByInstanceId:
+        keys: a01304004a190400
+        values:
+        - iColor: 2
+          icon: Terrain Icon
+        - iColor: 0
+          icon: Camera Icon
