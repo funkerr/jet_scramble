@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minWeatherTime: 0.041666668
   maxWeatherTime: 0.125
-  likelihood: 1
+  likelihood: 2
   forecastNext:
   - {fileID: 11400000, guid: 3daad8702a5ccbf418a5370bac12e4c0, type: 2}
   - {fileID: 11400000, guid: 455ce7df2555ead47afd8bdb324c85ab, type: 2}
@@ -22,7 +22,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: de62367a00d8753469a83e1f6f8079d3, type: 2}
   - {fileID: 11400000, guid: cc15965868141a44cb0997b3674e317a, type: 2}
   forecastModifierMethod: 0
-  chances: []
+  chances:
+  - limitType: 0
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 0
+      m_PostInfinity: 0
+      m_RotationOrder: 0
   FX:
   - {fileID: 11400000, guid: 6c47c4436d17880469b55c6e5ba5a6e9, type: 2}
   - {fileID: 11400000, guid: 7257577dfb019ed4685ab1e846b98e9e, type: 2}

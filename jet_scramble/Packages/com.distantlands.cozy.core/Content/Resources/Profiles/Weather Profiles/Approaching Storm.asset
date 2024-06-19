@@ -18,7 +18,14 @@ MonoBehaviour:
   forecastNext:
   - {fileID: 11400000, guid: 5f1173877e77b3b40af72776ce4ae64a, type: 2}
   forecastModifierMethod: 0
-  chances: []
+  chances:
+  - limitType: 0
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 0
+      m_PostInfinity: 0
+      m_RotationOrder: 0
   FX:
   - {fileID: 11400000, guid: f24b149cbeed0b24d831bde13c20f7f2, type: 2}
   - {fileID: 11400000, guid: 8aa234e65cf012b448367af9914cbe6f, type: 2}

@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   profilesToForecast:
   - {fileID: 11400000, guid: 81a9beb2b882b67448a746cf5c6f0f88, type: 2}
-  - {fileID: 11400000, guid: f161b3af7360fc043927736dde8f5c42, type: 2}
-  initialProfile: {fileID: 11400000, guid: 81a9beb2b882b67448a746cf5c6f0f88, type: 2}
+  initialProfile: {fileID: 11400000, guid: ccbfe05b7967917448c280fffa3a86d1, type: 2}
   initialForecast:
   - profile: {fileID: 11400000, guid: ae94c1a397a01e442a11e8b23ebb1cef, type: 2}
     startTime:
@@ -39,5 +38,5 @@ MonoBehaviour:
       minutes: 0
       seconds: 0
       milliseconds: 0
-  startWeatherWith: 1
+  startWeatherWith: 2
   forecastLength: 2

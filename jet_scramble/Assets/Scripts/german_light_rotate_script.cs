@@ -2,19 +2,20 @@ using VFolders;
 using VInspector;
 using UnityEngine;
 
-public class german_flak_rotate_script : MonoBehaviour
+public class german_light_rotate_script : MonoBehaviour
 {
+    [Foldout("Floats")]
     public float rotationSpeed = 50f; // Speed of rotation
-    public float maxAngle = 30f; // Maximum rotation angle
-    public float minAngle = -30f; // Minimum rotation angle
-
+    public float maxAngle; // Maximum rotation angle
+    public float minAngle; // Minimum rotation angle
     public float currentAngle; // Current angle of rotation
+
+    [Foldout("")]
     public bool rotatingForward; // Flag to indicate if currently rotating forward
 
     private void Start()
     {
         rotatingForward = true;
-        currentAngle = 0f;
     }
 
     void Update()
@@ -29,7 +30,7 @@ public class german_flak_rotate_script : MonoBehaviour
         currentAngle = Mathf.Clamp(currentAngle, minAngle, maxAngle);
 
         // Apply the rotation to the object
-        transform.rotation = Quaternion.Euler(0f, currentAngle, 0f);
+        transform.rotation = Quaternion.Euler(0f, currentAngle, 0f );
 
         // If the object reaches the target angle, reverse the rotation direction
         if (Mathf.Approximately(currentAngle, targetAngle))
