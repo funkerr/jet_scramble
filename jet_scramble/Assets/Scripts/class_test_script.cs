@@ -21,6 +21,16 @@ using UnityEngine.TextCore;
             myObj = obj;
 
         }
-    }
+
+        public Weapon(int dmg, string ID, string desc)
+        {
+            damage = dmg;
+            name = ID;
+            description = desc;
+            
+
+        }
+
+}
 
 

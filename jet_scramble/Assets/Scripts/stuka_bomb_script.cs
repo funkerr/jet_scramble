@@ -6,7 +6,7 @@ using MoreMountains.Feedbacks;
 using VInspector;
 using DistantLands.Cozy.Data;
 using UnityEngine.UIElements;
-
+using UnityEditor.SceneManagement;
 
 public class stuka_bomb_script : MonoBehaviour
 {
@@ -24,8 +24,13 @@ public class stuka_bomb_script : MonoBehaviour
     [Foldout("Feedbacks")]
     public MMF_Player stukaBombFeebackPlayer;
 
+    [Foldout("Gameobjects")]
+    public GameObject prefabs;
+
     [Foldout("Classez")]
     public Weapon newWeapon;
+    public Weapon mybomb2 = new Weapon(5, "test", "this wont work",null);
+
 
   
 
@@ -36,6 +41,8 @@ public class stuka_bomb_script : MonoBehaviour
         //myBomb.GetComponent<TrailRenderer>().emitting = false;
         //myWeapon = new Weapon(50, "Stuka Bomb", "Test Description");
         //Weapon myWeapon = new Weapon(5, "hi", "hi");
+        
+       // Weapon mybomb2 = new Weapon(5, "test", "this wont work");
 }
 
     void OnCollisionEnter(Collision col)
