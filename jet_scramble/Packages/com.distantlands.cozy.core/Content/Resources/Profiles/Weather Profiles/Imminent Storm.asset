@@ -18,9 +18,6 @@ MonoBehaviour:
   forecastNext:
   - {fileID: 11400000, guid: 3daad8702a5ccbf418a5370bac12e4c0, type: 2}
   - {fileID: 11400000, guid: 455ce7df2555ead47afd8bdb324c85ab, type: 2}
-  - {fileID: 11400000, guid: 360273c9c779d1f42a10eee5f070a83a, type: 2}
-  - {fileID: 11400000, guid: de62367a00d8753469a83e1f6f8079d3, type: 2}
-  - {fileID: 11400000, guid: cc15965868141a44cb0997b3674e317a, type: 2}
   forecastModifierMethod: 0
   chances:
   - limitType: 0

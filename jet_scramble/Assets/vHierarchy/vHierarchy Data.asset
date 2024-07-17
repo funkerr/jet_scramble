@@ -22,6 +22,7 @@ MonoBehaviour:
     - 4c45e9d3a666d724fb1e45f32c2f8602
     - eea2e7abe04947d4989daf9db9b28bbe
     - 6fcfa9c9787286547b2267edf0141c6f
+    - e13055eb4e323e646a227a9ce33ffbfe
     values:
     - goDatasByGlobalId:
         keys:
@@ -57,8 +58,28 @@ MonoBehaviour:
         - iColor: 8
           icon: 
       goDatasByInstanceId:
-        keys: 
-        values: []
+        keys: 82e8020032e902001aea020050e90200c2e802004ceb020068e9020088ea0200caea020068e80200
+        values:
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: AudioReverbZone Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: ScriptableObject Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 8
+          icon: 
+        - iColor: 8
+          icon: 
     - goDatasByGlobalId:
         keys: []
         values: []
@@ -108,18 +129,8 @@ MonoBehaviour:
         - iColor: 3
           icon: 
       goDatasByInstanceId:
-        keys: 4e94000004850200f25a07009c6007002c650700
-        values:
-        - iColor: 0
-          icon: Terrain Icon
-        - iColor: 0
-          icon: Terrain Icon
-        - iColor: 2
-          icon: Terrain Icon
-        - iColor: 4
-          icon: Camera Icon
-        - iColor: 3
-          icon: 
+        keys: 
+        values: []
     - goDatasByGlobalId:
         keys:
         - GlobalObjectId_V1-2-6fcfa9c9787286547b2267edf0141c6f-258597954-0
@@ -130,9 +141,26 @@ MonoBehaviour:
         - iColor: 0
           icon: Camera Icon
       goDatasByInstanceId:
-        keys: a01304004a190400
+        keys: 
+        values: []
+    - goDatasByGlobalId:
+        keys:
+        - GlobalObjectId_V1-2-e13055eb4e323e646a227a9ce33ffbfe-258597954-0
+        - GlobalObjectId_V1-2-e13055eb4e323e646a227a9ce33ffbfe-2127956156-0
+        - GlobalObjectId_V1-2-e13055eb4e323e646a227a9ce33ffbfe-1964499106-0
         values:
-        - iColor: 2
+        - iColor: 0
           icon: Terrain Icon
         - iColor: 0
-          icon: Camera Icon
+          icon: AvatarMask On Icon
+        - iColor: 0
+          icon: ParticleSystem Icon
+      goDatasByInstanceId:
+        keys: d60703002a6bd2ff88120300
+        values:
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: AvatarMask On Icon
+        - iColor: 0
+          icon: ParticleSystem Icon
