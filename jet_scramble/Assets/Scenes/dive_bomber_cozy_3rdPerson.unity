@@ -21,8 +21,8 @@ RenderSettings:
   m_LinearFogStart: 17.9
   m_LinearFogEnd: 298.17
   m_AmbientSkyColor: {r: 0.63919544, g: 0.9581202, b: 1.018868, a: 1.5}
-  m_AmbientEquatorColor: {r: 0.58461154, g: 0.7632127, b: 0.84311324, a: 1.24125}
-  m_AmbientGroundColor: {r: 0.29230577, g: 0.38160634, b: 0.42155662, a: 1.24125}
+  m_AmbientEquatorColor: {r: 0, g: 0, b: 0, a: 0}
+  m_AmbientGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
@@ -2946,7 +2946,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99856934}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.91949344, z: -0, w: -0.3931055}
+  m_LocalRotation: {x: -0, y: 0.86369514, z: -0, w: 0.5040147}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6514,24 +6514,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weatherSphere: {fileID: 1644043211}
   system: {fileID: 1644043211}
-  cumulus: 0.345
+  cumulus: 2
   cirrus: 0
   altocumulus: 0
   cirrostratus: 0
   chemtrails: 0
-  nimbus: 1.637
+  nimbus: 0
   nimbusHeight: 1
-  nimbusVariation: 1
+  nimbusVariation: 0.945
   borderHeight: 0.553
   borderEffect: 1
   borderVariation: 0.95
-  fogDensity: 1
+  fogDensity: 1.5
   weight: 1
-  filterSaturation: -0.088
-  filterValue: 0
-  filterColor: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 0}
-  sunFilter: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 0}
-  cloudFilter: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0}
+  filterSaturation: -0.5
+  filterValue: -0.06
+  filterColor: {r: 0.5647059, g: 0.6627451, b: 0.69803923, a: 0}
+  sunFilter: {r: 0.066037714, g: 0.066037714, b: 0.066037714, a: 0}
+  cloudFilter: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 0}
   ecosystem:
     forecastProfile: {fileID: 11400000, guid: 80479b69a5313a54db6943abd8097389, type: 2}
     weatherSelectionMode: 3
@@ -6539,18 +6539,18 @@ MonoBehaviour:
     weatherTransitionTime: 1
     weatherSphere: {fileID: 1644043211}
     system: {fileID: 1644043211}
-    currentWeather: {fileID: 11400000, guid: 5f1173877e77b3b40af72776ce4ae64a, type: 2}
-    weatherChangeCheck: {fileID: 11400000, guid: 5f1173877e77b3b40af72776ce4ae64a,
+    currentWeather: {fileID: 11400000, guid: f161b3af7360fc043927736dde8f5c42, type: 2}
+    weatherChangeCheck: {fileID: 11400000, guid: f161b3af7360fc043927736dde8f5c42,
       type: 2}
     weightedWeatherProfiles:
     - weight: 1
-      profile: {fileID: 11400000, guid: 5f1173877e77b3b40af72776ce4ae64a, type: 2}
+      profile: {fileID: 11400000, guid: f161b3af7360fc043927736dde8f5c42, type: 2}
       transitioning: 1
   parentModule: {fileID: 0}
   biomes: []
   currentWeatherProfiles:
   - weight: 1
-    profile: {fileID: 11400000, guid: 5f1173877e77b3b40af72776ce4ae64a, type: 2}
+    profile: {fileID: 11400000, guid: f161b3af7360fc043927736dde8f5c42, type: 2}
     transitioning: 1
   defaultFilter: {fileID: 11400000, guid: b3b90f04f4696264c9aab62e9c3c68a5, type: 2}
   defaultClouds: {fileID: 11400000, guid: 40c748033998bf243ae542ca195124b7, type: 2}
@@ -6572,11 +6572,11 @@ MonoBehaviour:
   controlMethod: 1
   localTemperatureFilter: 0
   localPrecipitationFilter: 0
-  currentTemperature: 79.5657
-  currentPrecipitation: 78.59097
+  currentTemperature: 84.5657
+  currentPrecipitation: 48.59097
   snowAmount: 0
   m_SnowMeltSpeed: 0.35
-  wetness: 0
+  wetness: 0.80638325
   m_DryingSpeed: 0.5
   snowSpeed: 0
   rainSpeed: 0
@@ -6601,7 +6601,7 @@ MonoBehaviour:
   cloudChunkPrefab: {fileID: 8377891541840844724, guid: 14274e75fd089eb4d8a6f636d963d186,
     type: 3}
   coverageIntensityOffset: 0
-  cloudCoverage: 0.495
+  cloudCoverage: 1
   bendToHorizonMultiplier: 0.1
   offset: {x: 0, y: 0, z: 0}
   matrixHolder: {fileID: 0}
@@ -14512,7 +14512,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2127956157}
     m_Modifications:
     - target: {fileID: 1197667299770256, guid: 35fa67ef30b12414393cebf2a195044e, type: 3}
       propertyPath: m_Name
@@ -14536,15 +14536,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4099947249847256, guid: 35fa67ef30b12414393cebf2a195044e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4099947249847256, guid: 35fa67ef30b12414393cebf2a195044e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4099947249847256, guid: 35fa67ef30b12414393cebf2a195044e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4099947249847256, guid: 35fa67ef30b12414393cebf2a195044e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -25754,7 +25754,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.76554835, g: 0.75011396, b: 0.64207286, a: 0}
+  m_Color: {r: 0.09082774, g: 0.08899654, b: 0.0761781, a: 0}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -35265,6 +35265,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 510607744}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &876109147 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4099947249847256, guid: 35fa67ef30b12414393cebf2a195044e,
+    type: 3}
+  m_PrefabInstance: {fileID: 282959463}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &879547280 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1788905613076402298, guid: 04017c0546107704aa4faa07e0b2e389,
@@ -35353,6 +35359,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lumen Light Flare 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4335234809564275880, guid: d07858f2c4d56cd4a9fcc4a0f06b61ff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -58401,18 +58412,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1
   targetWeight: 1
-  cumulus: 0.345
+  cumulus: 2
   cirrus: 0
   altocumulus: 0
   cirrostratus: 0
   chemtrails: 0
-  nimbus: 1.637
+  nimbus: 0
   nimbusHeightEffect: 1
-  nimbusVariation: 1
+  nimbusVariation: 0.945
   borderHeight: 0.553
   borderEffect: 1
   borderVariation: 0.95
-  fogDensity: 1
+  fogDensity: 1.5
   usePhysicalSunHeight: 1
   sunDirection: 50
   sunPitch: 0
@@ -58513,7 +58524,7 @@ MonoBehaviour:
   midNimbusLuxuryClouds: {fileID: 0}
   highNimbusLuxuryClouds: {fileID: 0}
   luxuryVariation: {fileID: 0}
-  rainbowIntensity: 0
+  rainbowIntensity: 0.80638325
   useRainbow: 1
   separateSunLightAndTransform: 0
   sunAngle: 0.5
@@ -58543,11 +58554,11 @@ MonoBehaviour:
     useOcclusion: 1
     occlusionRadius: 0.5
     allowOffscreen: 1
-  filterSaturation: -0.088
-  filterValue: 0
-  filterColor: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 0}
-  sunFilter: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 0}
-  cloudFilter: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0}
+  filterSaturation: -0.5
+  filterValue: -0.06
+  filterColor: {r: 0.5647059, g: 0.6627451, b: 0.69803923, a: 0}
+  sunFilter: {r: 0.066037714, g: 0.066037714, b: 0.066037714, a: 0}
+  cloudFilter: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 0}
   lockToCamera: 0
   freezeUpdateInEditMode: 0
   followEditorCamera: 1
@@ -58611,7 +58622,7 @@ Transform:
   m_GameObject: {fileID: 1644043210}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -69.90585, y: 3.3215032, z: -9.832463}
+  m_LocalPosition: {x: -69.740005, y: -0.92499995, z: -17.433336}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -65651,7 +65662,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.07573, y: 8.07573, z: 8.07573}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1506557205}
@@ -75746,7 +75757,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 876109147}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2128661842
@@ -83151,5 +83163,4 @@ SceneRoots:
   - {fileID: 1310640190}
   - {fileID: 163495308}
   - {fileID: 23100633}
-  - {fileID: 282959463}
   - {fileID: 1334235026}

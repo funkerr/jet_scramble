@@ -2788,7 +2788,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99856934}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.3604799, z: -0, w: 0.932767}
+  m_LocalRotation: {x: -0, y: 0.9523668, z: -0, w: 0.3049549}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -55058,7 +55058,7 @@ Transform:
   m_GameObject: {fileID: 1644043210}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.96308374, y: 1.56866, z: 9.511211}
+  m_LocalPosition: {x: 185.16776, y: 11.64011, z: 92.41384}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -61800,7 +61800,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.921004, y: 9.921004, z: 9.921004}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1506557205}
@@ -73351,6 +73351,17 @@ MonoBehaviour:
   bombVelocity: 1
   bombTiltAngle: 40
   stukaBombFeebackPlayer: {fileID: 1484001271}
+  prefabs: {fileID: 0}
+  newWeapon:
+    damage: 0
+    name: 
+    description: 
+    myObj: {fileID: 0}
+  mybomb2:
+    damage: 5
+    name: test
+    description: this wont work
+    myObj: {fileID: 0}
 --- !u!33 &33985566825946534
 MeshFilter:
   m_ObjectHideFlags: 0

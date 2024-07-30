@@ -45,4 +45,4 @@ MonoBehaviour:
   useCameraDistanceFade: 1
   useSceneDepthFade: 1
   useVariation: 0
-  needsToBeUpdated: 1
+  needsToBeUpdated: 0

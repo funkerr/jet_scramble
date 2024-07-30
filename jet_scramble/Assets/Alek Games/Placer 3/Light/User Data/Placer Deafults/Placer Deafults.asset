@@ -316,4 +316,4 @@ MonoBehaviour:
       specificIndex: -1
   showWelcomeScreen: 0
   projectOpened: 1
-  applicationClosesSinceAdValue: 6
+  applicationClosesSinceAdValue: 8
