@@ -13,18 +13,20 @@ public class jet_booster_script : MonoBehaviour
     public GameObject booster_left;
     public GameObject booster_right;
 
+    [Foldout("Ints")]
+    public int planeSpeedint;
+
     //[Foldout("PS")]
     //public ParticleSystem jet_cloudpuff_left;
-    
+
     ////public ParticleSystem jet_cloudpuff_right;
 
     [Foldout("Player Ref")]
-    public EasyAirplaneControls myPlayerControls;
+    public EasyAirplaneControls myPlayer;
 
     [Foldout("Feedbacks")]
     public MMF_Player feedback_test_player;
-    public MMF_Feedbacks jet_booster_feedbacks;
-    public MMF_Feedbacks jet_booster_feedbacks2;
+  
 
 
     // Start is called before the first frame update
@@ -36,6 +38,9 @@ public class jet_booster_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float planeSpeed = myPlayer.currentSpeed;
+        planeSpeedint = (int)planeSpeed;
+
         if(Input.GetKey(KeyCode.R))
         {
             booster_left.transform.DOScale(1.25f, 1f);
@@ -51,12 +56,11 @@ public class jet_booster_script : MonoBehaviour
             booster_right.transform.DOScale(.5f, .5f);
         }
 
-        if (myPlayerControls.currentSpeed == 45f)
+        if (planeSpeedint == 45f)
         {
+            Debug.Log("getting here");
             Debug.Log("speed is 45");
-            //jet_cloudpuff_left.loop = false;
-            //jet_booster_feedbacks.PlayFeedbacks();
-            jet_booster_feedbacks.Play(transform.position,1);
+            feedback_test_player.PlayFeedbacks();
             
 
         }
