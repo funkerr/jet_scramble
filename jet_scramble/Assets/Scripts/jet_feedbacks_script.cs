@@ -12,6 +12,7 @@ public class jet_feedbacks_script : MonoBehaviour
     public EasyAirplaneControls myPlayer;
 
     [Foldout("ParticleSystems")]
+    public ParticleSystem dustFront;
     public ParticleSystem dustLeft;
     public ParticleSystem dustRight;
 
@@ -36,7 +37,7 @@ public class jet_feedbacks_script : MonoBehaviour
 
         if (myPlayer.currentSpeed > .05f && !isGrounded)
         {
-            
+            dustFront.Stop();
             dustLeft.Stop();
             dustRight.Stop();
             
