@@ -48,7 +48,7 @@ MonoBehaviour:
   globalBrightness: 1
   variationSpeed: 4.95
   variationScale: 10
-  variationColor: {r: 1, g: 1, b: 1, a: 0.5058824}
+  variationColor: {r: 1, g: 0, b: 0, a: 0.5058824}
   showLayerSettings: 0
   showMainSettings: 0
   showVariationSettings: 0

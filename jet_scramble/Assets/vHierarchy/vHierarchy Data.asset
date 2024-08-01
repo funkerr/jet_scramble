@@ -23,6 +23,7 @@ MonoBehaviour:
     - eea2e7abe04947d4989daf9db9b28bbe
     - 6fcfa9c9787286547b2267edf0141c6f
     - e13055eb4e323e646a227a9ce33ffbfe
+    - 1cbee0bb72bf08847b9a043779ed6703
     values:
     - goDatasByGlobalId:
         keys:
@@ -58,28 +59,8 @@ MonoBehaviour:
         - iColor: 8
           icon: 
       goDatasByInstanceId:
-        keys: 82e8020032e902001aea020050e90200c2e802004ceb020068e9020088ea0200caea020068e80200
-        values:
-        - iColor: 0
-          icon: Terrain Icon
-        - iColor: 0
-          icon: AudioReverbZone Icon
-        - iColor: 0
-          icon: DirectionalLight Icon
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 0
-          icon: Camera Icon
-        - iColor: 0
-          icon: ScriptableObject Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 0
-          icon: StandaloneInputModule Icon
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
+        keys: 
+        values: []
     - goDatasByGlobalId:
         keys: []
         values: []
@@ -156,11 +137,43 @@ MonoBehaviour:
         - iColor: 0
           icon: ParticleSystem Icon
       goDatasByInstanceId:
-        keys: d60703002a6bd2ff88120300
+        keys: 
+        values: []
+    - goDatasByGlobalId:
+        keys:
+        - GlobalObjectId_V1-2-1cbee0bb72bf08847b9a043779ed6703-293979421-0
+        - GlobalObjectId_V1-2-1cbee0bb72bf08847b9a043779ed6703-540441420-0
+        - GlobalObjectId_V1-2-1cbee0bb72bf08847b9a043779ed6703-1191414704-0
+        - GlobalObjectId_V1-2-1cbee0bb72bf08847b9a043779ed6703-480947669-0
+        - GlobalObjectId_V1-2-1cbee0bb72bf08847b9a043779ed6703-173952013-0
+        - GlobalObjectId_V1-2-1cbee0bb72bf08847b9a043779ed6703-1824429891-0
         values:
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
         - iColor: 0
           icon: Terrain Icon
         - iColor: 0
-          icon: AvatarMask On Icon
+          icon: Terrain Icon
         - iColor: 0
-          icon: ParticleSystem Icon
+          icon: WheelCollider Icon
+      goDatasByInstanceId:
+        keys: 0aa281fffea404009aa50400aaa6040072a50400b6a4040052a80400
+        values:
+        - iColor: 0
+          icon: 
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: WheelCollider Icon

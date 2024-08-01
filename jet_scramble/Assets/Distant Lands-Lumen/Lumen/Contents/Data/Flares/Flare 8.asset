@@ -21,8 +21,8 @@ MonoBehaviour:
     open: 0
   - flareShape: 24
     flareMesh: {fileID: 0}
-    scale: 4.51
-    brightness: 0.012
+    scale: 8
+    brightness: 0
     colorMultiplier: {r: 1, g: 1, b: 1, a: 1}
     open: 1
   - flareShape: 2
@@ -43,12 +43,12 @@ MonoBehaviour:
     brightness: 0.255
     colorMultiplier: {r: 1, g: 1, b: 1, a: 1}
     open: 0
-  - flareShape: 16
+  - flareShape: 18
     flareMesh: {fileID: 0}
-    scale: 1.46
+    scale: 3.02
     brightness: 0.187
     colorMultiplier: {r: 1, g: 1, b: 1, a: 1}
-    open: 0
+    open: 1
   flareMaterial: {fileID: 2100000, guid: 7724528df85009d4dadb42eb105e754e, type: 2}
   globalScale: 1
   globalBrightness: 1
