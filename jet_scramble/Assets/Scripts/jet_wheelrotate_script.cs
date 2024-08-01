@@ -36,8 +36,9 @@ public class jet_wheelrotate_script : MonoBehaviour
         
 
 
-        if (myPlayer.currentSpeed > .05f && !isGrounded)
+        if (myPlayer.currentSpeed > .05f && isGrounded)
         {
+            Debug.Log("got to feedbacks"); 
            frontWheelFB.PlayFeedbacks();
             
         }
