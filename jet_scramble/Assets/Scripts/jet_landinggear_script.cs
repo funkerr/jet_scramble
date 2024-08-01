@@ -16,6 +16,12 @@ public class jet_landinggear_script : MonoBehaviour
     [Foldout("Transforms")]
     public Transform frontWheel;
 
+    [Foldout("Gameobjects")]
+    public GameObject frontWheelAxel;
+    //public Material  frontWheelAxel_mat;
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,13 +34,20 @@ public class jet_landinggear_script : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Alpha8))
         {
-            RaiseFrontWheel(frontWheel);
+            RaiseFrontWheel(frontWheel, frontWheelAxel);
         }
     }
 
-    public void RaiseFrontWheel(Transform fw)
+    public void RaiseFrontWheel(Transform fw, GameObject go)
     {
-        fw.transform.DOLocalMove(new Vector3(0,1.3f,0),gearTime);
+        Sequence test_sequence = DOTween.Sequence();
+        test_sequence.Append(fw.transform.DOLocalMove(new Vector3(0, 1.3f, 0), gearTime));
+        
+        test_sequence.AppendInterval(.001f);
+        test_sequence.Insert(5f, fw.transform.DOLocalRotate(new Vector3(-35f, 0, 0), test_sequence.Duration()));
+        //
+        //fw.transform.DOLocalMove(new Vector3(0,1.3f,0),gearTime);
+        //fw.transform.DOLocalRotate(new Vector3(-35f, 0, 0), 5);
         //elevator_right.transform.localRotation = Quaternion.Euler(30 * (planeMovement.currentElevatorRotation / planeMovement.maxElevatorRotation), 0, 0);
     }
 }
