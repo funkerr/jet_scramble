@@ -5,6 +5,7 @@ using DG.Tweening;
 using VInspector;
 using MoreMountains.Feedbacks;
 using UnityEngine.UIElements;
+using Sirenix.OdinInspector;
 
 public class jet_landinggear_script : MonoBehaviour
 {
@@ -15,7 +16,9 @@ public class jet_landinggear_script : MonoBehaviour
     public float disableTime;
 
     [Foldout("Transforms")]
+    
     public Transform frontWheel;
+
     public Transform frontWheelCover;
     public Transform rearWheel_L;
     public Transform rearWheelCover_L;
@@ -23,6 +26,7 @@ public class jet_landinggear_script : MonoBehaviour
     public Transform rearWheelCover_R;
 
     [Foldout("Gameobjects")]
+    [HorizontalGroup("Split", Width = 50), PreviewField(50)]
     public GameObject frontWheelAxel;
     public GameObject rearWheelAxel_L;
     public GameObject rearWheelAxel_R;
@@ -36,12 +40,6 @@ public class jet_landinggear_script : MonoBehaviour
         
     }
 
-    [Button]
-    void Test()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -53,7 +51,6 @@ public class jet_landinggear_script : MonoBehaviour
         }
     }
 
-    [Button]
     void RaiseFrontWheel(Transform fw, GameObject go,Transform fwc)
     {
         
