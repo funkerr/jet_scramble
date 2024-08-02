@@ -13,6 +13,8 @@ public class jet_wheelrotate_script : MonoBehaviour
 
     [Foldout("Wheels")]
     public GameObject frontWheel;
+    public GameObject leftWheel;
+    public GameObject rightWheel;
 
     [Foldout("Bools")]
     public bool isGrounded;

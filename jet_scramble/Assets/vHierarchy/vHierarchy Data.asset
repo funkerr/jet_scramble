@@ -24,6 +24,7 @@ MonoBehaviour:
     - 6fcfa9c9787286547b2267edf0141c6f
     - e13055eb4e323e646a227a9ce33ffbfe
     - 1cbee0bb72bf08847b9a043779ed6703
+    - b0790038b06c9bd42a7f8155d5a1a3ee
     values:
     - goDatasByGlobalId:
         keys:
@@ -147,6 +148,7 @@ MonoBehaviour:
         - GlobalObjectId_V1-2-1cbee0bb72bf08847b9a043779ed6703-480947669-0
         - GlobalObjectId_V1-2-1cbee0bb72bf08847b9a043779ed6703-173952013-0
         - GlobalObjectId_V1-2-1cbee0bb72bf08847b9a043779ed6703-1824429891-0
+        - GlobalObjectId_V1-2-1cbee0bb72bf08847b9a043779ed6703-8565185514354221502-0
         values:
         - iColor: 0
           icon: Camera Icon
@@ -160,8 +162,10 @@ MonoBehaviour:
           icon: Terrain Icon
         - iColor: 0
           icon: WheelCollider Icon
+        - iColor: 5
+          icon: AvatarMask On Icon
       goDatasByInstanceId:
-        keys: 0aa281fffea404009aa50400aaa6040072a50400b6a4040052a80400
+        keys: 0aa281fffea404009aa50400aaa6040072a50400b6a4040052a80400b2c4090050c5090062c6090026c509006ac4090020c809001ecc0900
         values:
         - iColor: 0
           icon: 
@@ -177,3 +181,23 @@ MonoBehaviour:
           icon: Terrain Icon
         - iColor: 0
           icon: WheelCollider Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: WheelCollider Icon
+        - iColor: 5
+          icon: AvatarMask On Icon
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []
