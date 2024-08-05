@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using VInspector;
+//using VInspector;
 using MoreMountains.Feedbacks;
 using UnityEngine.UIElements;
 using Sirenix.OdinInspector;
@@ -11,30 +11,38 @@ public class jet_landinggear_script : MonoBehaviour
 {
 
 
-    [Foldout("Floats")]
+    [FoldoutGroup("Floats")]
     public float gearTime;
+    [FoldoutGroup("Floats")]
     public float disableTime;
 
-    [Foldout("Transforms")]
-    
+    [FoldoutGroup("Transforms")]
     public Transform frontWheel;
-
+    [FoldoutGroup("Transforms")]
     public Transform frontWheelCover;
+    [FoldoutGroup("Transforms")]
     public Transform rearWheel_L;
+    [FoldoutGroup("Transforms")]
     public Transform rearWheelCover_L;
+    [FoldoutGroup("Transforms")]
     public Transform rearWheel_R;
+    [FoldoutGroup("Transforms")]
     public Transform rearWheelCover_R;
+    
 
-    [Foldout("Gameobjects")]
-    [HorizontalGroup("Split", Width = 50), PreviewField(50)]
+    [FoldoutGroup("Gameobjects")]
+    //[HorizontalGroup("Split", Width = 50), PreviewField(50)]
     public GameObject frontWheelAxel;
+    [FoldoutGroup("Gameobjects")]
     public GameObject rearWheelAxel_L;
+    [FoldoutGroup("Gameobjects")]
     public GameObject rearWheelAxel_R;
 
-    [Foldout("Feedbacks")]
+    [FoldoutGroup("Feedbacks")]
     public MMF_Player wheelCoverFeedBack;
 
     // Start is called before the first frame update
+    [Button(ButtonSizes.Small)]
     void Start()
     {
         
@@ -50,7 +58,7 @@ public class jet_landinggear_script : MonoBehaviour
             RaiseRearWheelRight(rearWheel_R, rearWheelAxel_R, rearWheelCover_R);
         }
     }
-
+    [Button(ButtonSizes.Small)]
     void RaiseFrontWheel(Transform fw, GameObject go,Transform fwc)
     {
         
