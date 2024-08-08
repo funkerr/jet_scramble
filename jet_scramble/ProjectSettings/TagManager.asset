@@ -13,6 +13,7 @@ TagManager:
   - groundtarget
   - FX
   - Radar
+  - ClickBlock
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - ScreenSpaceCavity
   - Radar
   - Missle
-  - 
+  - Projectiles
   - 
   - 
   - 
