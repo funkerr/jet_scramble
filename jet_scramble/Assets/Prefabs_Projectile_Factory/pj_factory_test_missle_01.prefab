@@ -303,3 +303,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missleTrailsPS: {fileID: 7261433543522314588}
   parentObject: {fileID: 6739863009242766793}
+  movetime: 0

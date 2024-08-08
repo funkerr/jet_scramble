@@ -90,6 +90,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8047981622158629895}
+    - targetCorrespondingSourceObject: {fileID: 3584797396176473578, guid: bda70297c38ce144083f0ff57d89f88d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 86590769255361680}
   m_SourcePrefab: {fileID: 100100000, guid: bda70297c38ce144083f0ff57d89f88d, type: 3}
 --- !u!1 &5035863882012007617 stripped
 GameObject:
@@ -124,6 +128,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &86590769255361680
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5035863882012007617}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.38135126, y: 0.38135126, z: 3.786685}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9210913912496523537 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 832749074378430522, guid: bda70297c38ce144083f0ff57d89f88d,
@@ -145,14 +170,18 @@ MonoBehaviour:
   projectileData: {fileID: 11400000, guid: 7bd5d92bc6b774ffb856389b4c4e723a, type: 2}
   spawnBehavior: {fileID: 11400000, guid: fd75d86a51140404fb89826197aff484, type: 2}
   spawnBehaviorModifications:
-  - {fileID: 11400000, guid: 32cdf62eb258cc04da84741147ee9706, type: 2}
+  - {fileID: 11400000, guid: a6e21ccc55d59471489aedfef2cd6438, type: 2}
   behaviors:
-  - {fileID: 11400000, guid: db901455e24ba43d182c6c29dbfc1e60, type: 2}
-  - {fileID: 11400000, guid: 97476774f712640e696ae44ac410d869, type: 2}
+  - {fileID: 11400000, guid: 981112dc4f2e74d22920b1e87bcf4edb, type: 2}
   - {fileID: 11400000, guid: 303d0bc0b82024b03a5ec7739e1092b5, type: 2}
+  - {fileID: 11400000, guid: 97476774f712640e696ae44ac410d869, type: 2}
+  - {fileID: 11400000, guid: 7bc3882c0861f42ba8fca53968208dce, type: 2}
+  - {fileID: 11400000, guid: 83f963df70b9c144884f65e06b065255, type: 2}
+  - {fileID: 11400000, guid: 0563949f6f69541e3be4b86698e1b528, type: 2}
+  - {fileID: 11400000, guid: 4b7fef9b5da25431b9a9ae578e9f1d9f, type: 2}
   observers: []
   registerWithProjectileFactoryManager: 1
-  useObjectPool: 1
+  useObjectPool: 0
   poolUniqueID: -1
   spawnBehaviorModificationsInstances: []
   OnLaunch:
@@ -201,12 +230,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   maxCollisionsPerFrame: 1
-  lookForwardAtSpawn: 0
+  lookForwardAtSpawn: 1
   collisionMask:
     serializedVersion: 2
     m_Bits: 0
   overrideCollisionMask: 0
-  preLaunchTrajectory: {fileID: 0}
+  preLaunchTrajectory: {fileID: 11400000, guid: 0563949f6f69541e3be4b86698e1b528,
+    type: 2}
   preLaunchTrajectoryInstance: {fileID: 0}
   useAltTargetPosition: 0
   hideTarget: 0
